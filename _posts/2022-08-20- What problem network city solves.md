@@ -32,6 +32,6 @@ We can generalize the idea of the network city around any set of values that cer
 
 Network cities can be fully virtual with no physical land backing, or can have one hub of physical backing with distributed citizens set (like Israel). This models will enable people to keep their set of believes and values, whilst having an insurance, or some kind of exit plan in case they gets censored.
 
-![theme logo](/network-city-1.png){:.ioda}
+![theme logo](/Network-city-1.png){:.ioda}
 
 ![2](/network-city-2.png){:.ioda}
