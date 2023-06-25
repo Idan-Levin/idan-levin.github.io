@@ -5,3 +5,6 @@ source "https://rubygems.org"
 gem "kramdown-parser-gfm"
 
 gemspec
+
+gem "jekyll", "~> 3.9.3"
+gem "webrick", "~> 1.7"
