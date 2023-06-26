@@ -16,8 +16,8 @@ entries:
 
 
   - title: Reading
-    post_list: 
-      limit: 
-      category: Reading
-      show_more: true
+    entries:
+      - title: my reading list 
+        url: reading 
+    
   
