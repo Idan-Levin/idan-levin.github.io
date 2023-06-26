@@ -28,7 +28,7 @@ This book serves as a practical guide on how we can achieve a system of non-gove
 
 
 
-<a href='https://en.wikipedia.org/wiki/The_Prince'>The Prince</a> - This is a dark book that serves as a guide for totalitarian rulers and politicians. Despite its extremely dark nature, it provides an excellent framework for strategic thinking.
+<a href='https://en.wikipedia.org/wiki/The_Prince'>The Prince</a> - This is a dark book written during the 16th century to serve as a guide for rulers. Despite its dark nature, it provides an excellent framework for strategic thinking.
 
 ### Philloshopy 
  
