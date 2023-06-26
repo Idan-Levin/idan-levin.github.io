@@ -3,7 +3,7 @@ layout: post
 category: blog_posts
 ---
 
-**This blog post is part of the <a href='https://www.citydao.io/'>CityDAO</a>  contest for offering the best problem that can be solved with network cities.**
+**This blog post is part of the <a href='https://www.citydao.io/'>CityDAO</a> contest for offering the best problem that can be solved with network cities.**
 
 
 The best general use case for network cities is building real life censorship resistance networks.
