@@ -14,10 +14,19 @@ entries:
       show_more_text: See archive...
       show_more_url: archive.html
 
+  - title: Select Tweetstorms
+    entries:
+      - title: <a href='https://twitter.com/0xidanlevin/status/1498607358464909315'>Wallet-to-wallet messaging - why is that the next web3 big thing🧵?</a>
+      - title: <a href='https://twitter.com/0xidanlevin/status/1541047522088472578'>Why is DeSci the next big thing 🧵?</a>
+      - title: <a href='https://twitter.com/0xidanlevin/status/1452633199021068292'>Why is DeFi going to eat the world 🧵?</a>
+      - title: <a href='https://twitter.com/0xidanlevin/status/1514502671142735872'>The hidden price of algorithmic stablecoins 🧵</a>
 
   - title: Reading
     entries:
       - title: my favorite readings 
         url: reading 
+
+        
+
     
   
