@@ -5,7 +5,11 @@ category: blog_posts_not_done_yet
 
 ### the role of art 
 
-I find art in the digital space a very itneresting and promising area in crypto (I always love speaking with both artists and collectors, diving into their train of thought), but I also find a lot of people that don't really understand art. I think art in in general has a really important role in the advancement of society (I know some of you are probably scratching their head right now, and maybe not connceting art and technology or societal advancements). Most people just don't really pay too much atention to it. So I want to explain what is art **to me** and why I believe it so important.
+"Art is the sneaky backdoor that let you slip in ideas into society subconscious"
+
+I find art in the crypto space to be a storng pillar in moving the industry forward. but I also find a lot of people that don't really understand art. 
+
+I beleive art in in general has a really important role in the advancement of society (I know some of you are probably scratching their head right now, and maybe not connceting art and technology or societal advancements). Most people just don't really pay too much atention to it. So I want to explain what is art **to me** and why I believe it so important.
 
 
 Ask a few different people 'what is art' and you'll get a few different answers. This is great, and actually after diving into my argument of why art is imortant you will see that this is exactly the purpose of art! 
