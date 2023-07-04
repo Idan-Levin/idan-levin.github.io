@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title> preventing restaking centralization risks</title><!-- Begin Jekyll SEO tag v2.7.1 -->
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="preventing restaking centralization risks" />
+<meta name="author" content="Idan Levin" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="preventing centralization risks from restaking" />
+<meta property="og:description" content="preventing centralization risks from restaking" />
+<link rel="canonical" href="https://idan-levin.github.io/idanlevin.github.io//preventing-restaking-centralization-risks.html" />
+<meta property="og:url" content="https://idan-levin.github.io/idanlevin.github.io//preventing-restaking-centralization-risks.html" />
+<meta property="og:site_name" content="Idan Levin" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-07-04T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="preventing restaking centralization risks" />
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"Idan Levin"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://idan-levin.github.io/idanlevin.github.io//preventing-restaking-centralization-risks.html"},"description":"preventing centralization risks from restaking","url":"https://idan-levin.github.io/idanlevin.github.io//preventing-restaking-centralization-risks.html","@type":"BlogPosting","headline":"preventing restaking centralization risks","dateModified":"2023-07-04T00:00:00+00:00","datePublished":"2023-07-04T00:00:00+00:00","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="https://idan-levin.github.io/idanlevin.github.io//feed.xml" title="Idan Levin" /><link rel="shortcut icon" type="image/x-icon" href="/logo.png" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head><body a="light">
+    <main class="page-content" aria-label="Content">
+      <div class="w">
+        <a href="/">..</a><article>
+  <p class="post-meta">
+    <time datetime="2023-07-04 00:00:00 +0000">2023-07-04</time>
+  </p>
+  
+  <h1> preventing restaking centralization risks</h1>
+
+  <h3 id="preventing-centralization-risks-from-restaking">preventing centralization risks from restaking</h3>
+
+<p>In the latest <a href="https://www.youtube.com/watch?v=aP9f_1v9Ulc">Bankless</a> episode about restaking, Justin Drake highlighted a key risk that restaking protocols pose to Ethereum’s decentralization.</p>
+
+<p>I want to explain this risk and offer an economic solution that I believe can solve it, and by this to prevent centralization risks from restaking protocols in the future. Let’s start by explaining the risk itself first - stake centralization due to the existence of restaking services. We need to go back to Proposer-Builder-Separation (PBS) to understand this better:</p>
+
+<p>One of the great successes of PBS was that it leveled the playing field for validators. With PBS, every validator that tapped into the PBS relay got to enjoy the same yield for staking (and offer it to its delegating stakers). The idea here is that there isn’t any economic advantage for any validator from building more profitable blocks than others. Hence users are indifferent in delegating their stake between the different validators because all the returns are the same.</p>
+
+<p>Post PBS, there isn’t a return-to-scale advantage to any validator. Return to scale for some validators enables them to have better returns, and consequentially to become very dominant by attracting more stake than other validators (=centralization risk). So the key principle to eliminating centralization risks is not allowing any validator to have an economic advantage over other validators (especially advantages that compounds with size).</p>
+
+<h3 id="why-restaking-gets-us-back-to-stake-centralization">why restaking gets us back to stake centralization?</h3>
+
+<p>Now let’s move to restaking, and why it changes this dynamic:</p>
+
+<p>Eigen Layer and similar restaking services allow an infinite number of new permissionless services to be built on top of Ethereum, using the same stake. This creates an infinite space for inventing new permissionless services built on top of Ethereum. But this also creates a new type of centralization risk that PBS was aimed at solving - Restaking protocols will allow validators to tap into new staking services in addition to just validating Ethereum consensus.</p>
+
+<p>Eventually, these validators can offer better returns to their delegators by not just offering plain Ethereum staking yields. Now we can get some additional yield on top of Ethereum staking yield! yay!</p>
+
+<p>After restaking, validators that tap into restaking services can offer higher APY to their delegators! How much higher? Well, it depends on how many staking services they eventually tap into (you can theoretically tap into how many you would like). How will validators determine which restaking services they should tap into and offer to their stake delegators? Analyzing a specific service built on restaking might not be such an easy job as one might think. Understanding the risks from new consensus protocols, oracles, or other permissionless services built using restaking protocols, is not an easy job!</p>
+
+<p>As a validator, you need to have a very deep understanding of the service you tap into and offer to your stake delegators, in order to truly understand the risks and potential rewards.</p>
+
+<p>Stake delegators, and subsequently capital inflows, will likely avoid validators who mindlessly tap into restaking services without fully understanding the associated risks. They will most likely prefer to delegate their stake to sophisticated validators with reputations that can underwrite restaking services successfully.</p>
+
+<p>This presents a significant challenge - sophisticated validators with more resources and deeper pockets can better understand the risks and rewards of specific restaking services. Over time, this advantage can accumulate and result in a better reputation for the validator that has more resources. This returns us to the starting point - some validators will have a return to scale, which will allow them to attract more capital. This leads to centralization risks, the very issue PBS was designed to solve!</p>
+
+<p>The end game here is that a few validators that can underwrite restaking services better (and communicate it outwards) will gain most of the stake and reputation. an we get out of this centralization pitfall in an elegant way and still enjoy restaking innovation?</p>
+
+<p>Yes!</p>
+
+<p>The solution, in short, is standardizing a restaking aggregation service that all validators can tap into, a ‘one size fits all’ approach. This is akin to an Exchange-Traded Fund (ETF) in traditional finance.</p>
+
+<p>Before we get into the solution, there are some simple assumptions we need to make first -</p>
+
+<ol>
+  <li>There will be many restaking services, probably hundreds of them eventually.</li>
+  <li>They will have a different risk-reward ratio.</li>
+  <li>Pareto rule will apply to their success, meaning few services (could be tens) will probably become very dominant, so if you will rank services by their dominance you will get a pareto distribution.</li>
+  <li>Now let’s introduce a classical finance theory called ‘portfolio theory’, coined by Harry Markowitz (who won the Nobel prize for this).</li>
+</ol>
+
+<p>Portfolio theory explains how to allocate an investment portfolio in an optimal way. We can think of each restaking service as a specific asset and the combination of different restaking services as a portfolio.</p>
+
+<p>What if we could select an optimal mix of restaking services?</p>
+
+<p>That will be great because instead of having lots of discretion for each validator in picking the different services to tap into and offer to restakers, they can just pick the optimal portfolio. And then it doesn’t matter which validator you delegate your stake to because they offer the same optimal portfolio. The optimal portfolio is great and advances decentralization, because there is no discretion in picking staking services! Now every validator that wants to offer restaking, can offer the vanilla product (which is the optimal portfolio of restaking services), and assuming this will be the market-preferable option, we are again, evening the playing field for validators!</p>
+
+<p>This also solves the problem of individual restakers that hold LSTs and want to restake by themselves. In their case the issue is that stake will accumulate to specific services, which might get too much of Ethereum stake used by them. Instead of having to underwrite a specific service, the restaker can just choose the optimal portfolio and enjoy diversification of restaking. This will ensure that the stake flowing to some services will not make them ‘too big to fail’ (because they accumulated too much stake).</p>
+
+<p>You may ask, why should this work? Why would restakers prefer an ‘optimal portfolio’?</p>
+
+<p>We have a lot of evidence from traditional markets that ETFs are a great efficient solution for long-term investment (a big portion of public funds are held in these portfolios). There are some good reasons for that:</p>
+
+<ol>
+  <li>Optimal portfolios are diversified, and diversification, when done in a good way, eliminates risk.</li>
+  <li>Users don’t have the capacity to actually choose across tens/hundreds of different restaking services.</li>
+  <li>Buy-and-hold (restake-and-hold in our case) is a great strategy for passive investors.</li>
+  <li>We can safely assume that having a market-agreed-upon efficient portfolio of restaking services can become very popular by restakers.</li>
+</ol>
+
+<p>There are obviously some open questions:</p>
+
+<ul>
+  <li>How do we agree on such an optimal portfolio and what are the criteria for getting in as a restaking service?</li>
+  <li>Will this standard create overdominance of a specific set of services?</li>
+  <li>Can we get a market consensus on this?</li>
+  <li>Should we create multiple optimal portfolios catering to different risk levels (high risk, medium risk, or low risk)?</li>
+</ul>
+
+<h3 id="summary">Summary:</h3>
+
+<ul>
+  <li>Create an optimal portfolio of restaking services.</li>
+  <li>If the market accepts this as a standard, most users participating in restaking will likely choose the vanilla product used by others.</li>
+  <li>Most validators offering the optimal</li>
+</ul>
+
+<p><img src="/restaking1" alt="1" class="ioda" /></p>
+
+<p><img src="/restaking2" alt="2" class="ioda" /></p>
+
+
+</article>
+      </div>
+    </main>
+  </body>
+</html>

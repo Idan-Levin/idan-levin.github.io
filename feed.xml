@@ -1,5 +1,84 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="https://idan-levin.github.io/idanlevin.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://idan-levin.github.io/idanlevin.github.io//" rel="alternate" type="text/html" /><updated>2023-07-04T07:43:53+00:00</updated><id>https://idan-levin.github.io/idanlevin.github.io//feed.xml</id><title type="html">Idan Levin</title><subtitle>A (nearly) no-CSS, fast, minimalist Jekyll theme.
-</subtitle><author><name>Idan Levin</name></author><entry><title type="html">The role of art</title><link href="https://idan-levin.github.io/idanlevin.github.io//the-role-of-art.html" rel="alternate" type="text/html" title="The role of art" /><published>2023-06-24T00:00:00+00:00</published><updated>2023-06-24T00:00:00+00:00</updated><id>https://idan-levin.github.io/idanlevin.github.io//the%20role%20of%20art</id><content type="html" xml:base="https://idan-levin.github.io/idanlevin.github.io//the-role-of-art.html">&lt;h3 id=&quot;the-role-of-art&quot;&gt;the role of art&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="https://idan-levin.github.io/idanlevin.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://idan-levin.github.io/idanlevin.github.io//" rel="alternate" type="text/html" /><updated>2023-07-04T07:46:54+00:00</updated><id>https://idan-levin.github.io/idanlevin.github.io//feed.xml</id><title type="html">Idan Levin</title><subtitle>A (nearly) no-CSS, fast, minimalist Jekyll theme.
+</subtitle><author><name>Idan Levin</name></author><entry><title type="html">preventing restaking centralization risks</title><link href="https://idan-levin.github.io/idanlevin.github.io//preventing-restaking-centralization-risks.html" rel="alternate" type="text/html" title="preventing restaking centralization risks" /><published>2023-07-04T00:00:00+00:00</published><updated>2023-07-04T00:00:00+00:00</updated><id>https://idan-levin.github.io/idanlevin.github.io//%20preventing%20restaking%20centralization%20risks</id><content type="html" xml:base="https://idan-levin.github.io/idanlevin.github.io//preventing-restaking-centralization-risks.html">&lt;h3 id=&quot;preventing-centralization-risks-from-restaking&quot;&gt;preventing centralization risks from restaking&lt;/h3&gt;
+
+&lt;p&gt;In the latest &lt;a href=&quot;https://www.youtube.com/watch?v=aP9f_1v9Ulc&quot;&gt;Bankless&lt;/a&gt; episode about restaking, Justin Drake highlighted a key risk that restaking protocols pose to Ethereum’s decentralization.&lt;/p&gt;
+
+&lt;p&gt;I want to explain this risk and offer an economic solution that I believe can solve it, and by this to prevent centralization risks from restaking protocols in the future. Let’s start by explaining the risk itself first - stake centralization due to the existence of restaking services. We need to go back to Proposer-Builder-Separation (PBS) to understand this better:&lt;/p&gt;
+
+&lt;p&gt;One of the great successes of PBS was that it leveled the playing field for validators. With PBS, every validator that tapped into the PBS relay got to enjoy the same yield for staking (and offer it to its delegating stakers). The idea here is that there isn’t any economic advantage for any validator from building more profitable blocks than others. Hence users are indifferent in delegating their stake between the different validators because all the returns are the same.&lt;/p&gt;
+
+&lt;p&gt;Post PBS, there isn’t a return-to-scale advantage to any validator. Return to scale for some validators enables them to have better returns, and consequentially to become very dominant by attracting more stake than other validators (=centralization risk). So the key principle to eliminating centralization risks is not allowing any validator to have an economic advantage over other validators (especially advantages that compounds with size).&lt;/p&gt;
+
+&lt;h3 id=&quot;why-restaking-gets-us-back-to-stake-centralization&quot;&gt;why restaking gets us back to stake centralization?&lt;/h3&gt;
+
+&lt;p&gt;Now let’s move to restaking, and why it changes this dynamic:&lt;/p&gt;
+
+&lt;p&gt;Eigen Layer and similar restaking services allow an infinite number of new permissionless services to be built on top of Ethereum, using the same stake. This creates an infinite space for inventing new permissionless services built on top of Ethereum. But this also creates a new type of centralization risk that PBS was aimed at solving - Restaking protocols will allow validators to tap into new staking services in addition to just validating Ethereum consensus.&lt;/p&gt;
+
+&lt;p&gt;Eventually, these validators can offer better returns to their delegators by not just offering plain Ethereum staking yields. Now we can get some additional yield on top of Ethereum staking yield! yay!&lt;/p&gt;
+
+&lt;p&gt;After restaking, validators that tap into restaking services can offer higher APY to their delegators! How much higher? Well, it depends on how many staking services they eventually tap into (you can theoretically tap into how many you would like). How will validators determine which restaking services they should tap into and offer to their stake delegators? Analyzing a specific service built on restaking might not be such an easy job as one might think. Understanding the risks from new consensus protocols, oracles, or other permissionless services built using restaking protocols, is not an easy job!&lt;/p&gt;
+
+&lt;p&gt;As a validator, you need to have a very deep understanding of the service you tap into and offer to your stake delegators, in order to truly understand the risks and potential rewards.&lt;/p&gt;
+
+&lt;p&gt;Stake delegators, and subsequently capital inflows, will likely avoid validators who mindlessly tap into restaking services without fully understanding the associated risks. They will most likely prefer to delegate their stake to sophisticated validators with reputations that can underwrite restaking services successfully.&lt;/p&gt;
+
+&lt;p&gt;This presents a significant challenge - sophisticated validators with more resources and deeper pockets can better understand the risks and rewards of specific restaking services. Over time, this advantage can accumulate and result in a better reputation for the validator that has more resources. This returns us to the starting point - some validators will have a return to scale, which will allow them to attract more capital. This leads to centralization risks, the very issue PBS was designed to solve!&lt;/p&gt;
+
+&lt;p&gt;The end game here is that a few validators that can underwrite restaking services better (and communicate it outwards) will gain most of the stake and reputation. an we get out of this centralization pitfall in an elegant way and still enjoy restaking innovation?&lt;/p&gt;
+
+&lt;p&gt;Yes!&lt;/p&gt;
+
+&lt;p&gt;The solution, in short, is standardizing a restaking aggregation service that all validators can tap into, a ‘one size fits all’ approach. This is akin to an Exchange-Traded Fund (ETF) in traditional finance.&lt;/p&gt;
+
+&lt;p&gt;Before we get into the solution, there are some simple assumptions we need to make first -&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;There will be many restaking services, probably hundreds of them eventually.&lt;/li&gt;
+  &lt;li&gt;They will have a different risk-reward ratio.&lt;/li&gt;
+  &lt;li&gt;Pareto rule will apply to their success, meaning few services (could be tens) will probably become very dominant, so if you will rank services by their dominance you will get a pareto distribution.&lt;/li&gt;
+  &lt;li&gt;Now let’s introduce a classical finance theory called ‘portfolio theory’, coined by Harry Markowitz (who won the Nobel prize for this).&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Portfolio theory explains how to allocate an investment portfolio in an optimal way. We can think of each restaking service as a specific asset and the combination of different restaking services as a portfolio.&lt;/p&gt;
+
+&lt;p&gt;What if we could select an optimal mix of restaking services?&lt;/p&gt;
+
+&lt;p&gt;That will be great because instead of having lots of discretion for each validator in picking the different services to tap into and offer to restakers, they can just pick the optimal portfolio. And then it doesn’t matter which validator you delegate your stake to because they offer the same optimal portfolio. The optimal portfolio is great and advances decentralization, because there is no discretion in picking staking services! Now every validator that wants to offer restaking, can offer the vanilla product (which is the optimal portfolio of restaking services), and assuming this will be the market-preferable option, we are again, evening the playing field for validators!&lt;/p&gt;
+
+&lt;p&gt;This also solves the problem of individual restakers that hold LSTs and want to restake by themselves. In their case the issue is that stake will accumulate to specific services, which might get too much of Ethereum stake used by them. Instead of having to underwrite a specific service, the restaker can just choose the optimal portfolio and enjoy diversification of restaking. This will ensure that the stake flowing to some services will not make them ‘too big to fail’ (because they accumulated too much stake).&lt;/p&gt;
+
+&lt;p&gt;You may ask, why should this work? Why would restakers prefer an ‘optimal portfolio’?&lt;/p&gt;
+
+&lt;p&gt;We have a lot of evidence from traditional markets that ETFs are a great efficient solution for long-term investment (a big portion of public funds are held in these portfolios). There are some good reasons for that:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Optimal portfolios are diversified, and diversification, when done in a good way, eliminates risk.&lt;/li&gt;
+  &lt;li&gt;Users don’t have the capacity to actually choose across tens/hundreds of different restaking services.&lt;/li&gt;
+  &lt;li&gt;Buy-and-hold (restake-and-hold in our case) is a great strategy for passive investors.&lt;/li&gt;
+  &lt;li&gt;We can safely assume that having a market-agreed-upon efficient portfolio of restaking services can become very popular by restakers.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;There are obviously some open questions:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;How do we agree on such an optimal portfolio and what are the criteria for getting in as a restaking service?&lt;/li&gt;
+  &lt;li&gt;Will this standard create overdominance of a specific set of services?&lt;/li&gt;
+  &lt;li&gt;Can we get a market consensus on this?&lt;/li&gt;
+  &lt;li&gt;Should we create multiple optimal portfolios catering to different risk levels (high risk, medium risk, or low risk)?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;summary&quot;&gt;Summary:&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Create an optimal portfolio of restaking services.&lt;/li&gt;
+  &lt;li&gt;If the market accepts this as a standard, most users participating in restaking will likely choose the vanilla product used by others.&lt;/li&gt;
+  &lt;li&gt;Most validators offering the optimal&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/restaking1&quot; alt=&quot;1&quot; class=&quot;ioda&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/restaking2&quot; alt=&quot;2&quot; class=&quot;ioda&quot; /&gt;&lt;/p&gt;</content><author><name>Idan Levin</name></author><category term="blog_posts" /><summary type="html">preventing centralization risks from restaking</summary></entry><entry><title type="html">The role of art</title><link href="https://idan-levin.github.io/idanlevin.github.io//the-role-of-art.html" rel="alternate" type="text/html" title="The role of art" /><published>2023-06-24T00:00:00+00:00</published><updated>2023-06-24T00:00:00+00:00</updated><id>https://idan-levin.github.io/idanlevin.github.io//the%20role%20of%20art</id><content type="html" xml:base="https://idan-levin.github.io/idanlevin.github.io//the-role-of-art.html">&lt;h3 id=&quot;the-role-of-art&quot;&gt;the role of art&lt;/h3&gt;
 
 &lt;p&gt;“Art is the sneaky backdoor that let you slip in ideas into society subconscious”&lt;/p&gt;
 
@@ -332,118 +411,4 @@ We can take this real life censorship resistant property and generalize it to ot
 
 &lt;p&gt;因林可相儿应满军，热影省条律因资再，整肃赤心将届。 局广写两量备验还，南教事争工民的，备进研上布。 素身电活非直，速这区交示从，百层达。 资量那毛什京身，白这快。 半打容三手开常价或，手严量般象式效，名可重芽门适。 来设什一我么，光界美么或，住身式准。 造酸改表委验众办地百养，商物战众本列听度名院，制压录丽快与千机内。 住需当四议决得命南然照按民置，当住命形金决否矿单外。 气象理离开新集增际，三划方工义很年关，拉许准孝口。 构片出干计由备美打养，持育总指承入无己。&lt;/p&gt;
 
-&lt;p&gt;From &lt;a href=&quot;http://www.cancms.com/content/dummytext&quot;&gt;假文生成器， lorem ipsum Chinese&lt;/a&gt;&lt;/p&gt;</content><author><name>Idan Levin</name></author><category term="example2" /><summary type="html">Note: I took this test post from moving, which is another Jekyll theme which is better that this one so I should not have linked it because now you will decide to use it instead of mine.</summary></entry><entry><title type="html">Very Very Very Long Title And Very Very Very Short Content</title><link href="https://idan-levin.github.io/idanlevin.github.io//very-very-very-long-title-and-very-very-very-short-content.html" rel="alternate" type="text/html" title="Very Very Very Long Title And Very Very Very Short Content" /><published>2020-07-08T00:00:00+00:00</published><updated>2020-07-08T00:00:00+00:00</updated><id>https://idan-levin.github.io/idanlevin.github.io//very-very-very-long-title-and-very-very-very-short-content</id><content type="html" xml:base="https://idan-levin.github.io/idanlevin.github.io//very-very-very-long-title-and-very-very-very-short-content.html">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel lacinia neque. Praesent nulla quam, ullamcorper in sollicitudin ac, molestie sed justo. Cras aliquam, sapien id consectetur accumsan, augue magna faucibus ex, ut ultricies turpis tortor vel ante. In at rutrum tellus. Nullam vestibulum metus eu purus malesuada, volutpat mattis leo facilisis.&lt;/p&gt;</content><author><name>Idan Levin</name></author><category term="example" /><summary type="html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel lacinia neque. Praesent nulla quam, ullamcorper in sollicitudin ac, molestie sed justo. Cras aliquam, sapien id consectetur accumsan, augue magna faucibus ex, ut ultricies turpis tortor vel ante. In at rutrum tellus. Nullam vestibulum metus eu purus malesuada, volutpat mattis leo facilisis.</summary></entry><entry><title type="html">Overview Post</title><link href="https://idan-levin.github.io/idanlevin.github.io//overview-post.html" rel="alternate" type="text/html" title="Overview Post" /><published>2020-07-07T00:00:00+00:00</published><updated>2020-07-07T00:00:00+00:00</updated><id>https://idan-levin.github.io/idanlevin.github.io//overview-post</id><content type="html" xml:base="https://idan-levin.github.io/idanlevin.github.io//overview-post.html">&lt;p&gt;Lorem ipsum&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; dolor sit amet, consectetur adipiscing elit. Pellentesque vel lacinia neque. Praesent nulla quam, ullamcorper in sollicitudin ac, molestie sed justo. Cras aliquam, sapien id consectetur accumsan, augue magna faucibus ex, ut ultricies turpis tortor vel ante. In at rutrum tellus.&lt;/p&gt;
-
-&lt;h1 id=&quot;sample-heading-1&quot;&gt;Sample heading 1&lt;/h1&gt;
-&lt;h2 id=&quot;sample-heading-2&quot;&gt;Sample heading 2&lt;/h2&gt;
-&lt;h3 id=&quot;sample-heading-3&quot;&gt;Sample heading 3&lt;/h3&gt;
-&lt;h4 id=&quot;sample-heading-4&quot;&gt;Sample heading 4&lt;/h4&gt;
-&lt;h5 id=&quot;sample-heading-5&quot;&gt;Sample heading 5&lt;/h5&gt;
-&lt;h6 id=&quot;sample-heading-6&quot;&gt;Sample heading 6&lt;/h6&gt;
-
-&lt;p&gt;Mauris viverra dictum ultricies. Vestibulum quis ipsum euismod, facilisis metus sed, varius ipsum. Donec scelerisque lacus libero, eu dignissim sem venenatis at. Etiam id nisl ut lorem gravida euismod.&lt;/p&gt;
-
-&lt;h2 id=&quot;lists&quot;&gt;Lists&lt;/h2&gt;
-
-&lt;p&gt;Unordered:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Fusce non velit cursus ligula mattis convallis vel at metus&lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
-  &lt;li&gt;Sed pharetra tellus massa, non elementum eros vulputate non.&lt;/li&gt;
-  &lt;li&gt;Suspendisse potenti.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Ordered:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Quisque arcu felis, laoreet vel accumsan sit amet, fermentum at nunc.&lt;/li&gt;
-  &lt;li&gt;Sed massa quam, auctor in eros quis, porttitor tincidunt orci.&lt;/li&gt;
-  &lt;li&gt;Nulla convallis id sapien ornare viverra.&lt;/li&gt;
-  &lt;li&gt;Nam a est eget ligula pellentesque posuere.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;blockquote&quot;&gt;Blockquote&lt;/h2&gt;
-
-&lt;p&gt;The following is a blockquote:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Suspendisse tempus dolor nec risus sodales posuere. Proin dui dui, mollis a consectetur molestie, lobortis vitae tellus.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;thematic-breaks-hr&quot;&gt;Thematic breaks (&amp;lt;hr&amp;gt;)&lt;/h2&gt;
-
-&lt;p&gt;Mauris viverra dictum ultricies&lt;sup id=&quot;fnref:3&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;. Vestibulum quis ipsum euismod, facilisis metus sed, varius ipsum. Donec scelerisque lacus libero, eu dignissim sem venenatis at. Etiam id nisl ut lorem gravida euismod. &lt;strong&gt;You can put some text inside the horizontal rule like so.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;hr data-content=&quot;hr with text&quot; /&gt;
-
-&lt;p&gt;Mauris viverra dictum ultricies. Vestibulum quis ipsum euismod, facilisis metus sed, varius ipsum. Donec scelerisque lacus libero, eu dignissim sem venenatis at. Etiam id nisl ut lorem gravida euismod. &lt;strong&gt;Or you can just have an clean horizontal rule.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Mauris viverra dictum ultricies. Vestibulum quis ipsum euismod, facilisis metus sed, varius ipsum. Donec scelerisque lacus libero, eu dignissim sem venenatis at. Etiam id nisl ut lorem gravida euismod. Or you can just have an clean horizontal rule.&lt;/p&gt;
-
-&lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
-
-&lt;p&gt;Now some code:&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;const ultimateTruth = 'this theme is the best!';
-console.log(ultimateTruth);
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;And here is some &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;inline code&lt;/code&gt;!&lt;/p&gt;
-
-&lt;h2 id=&quot;tables&quot;&gt;Tables&lt;/h2&gt;
-
-&lt;p&gt;Now a table:&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Tables&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Are&lt;/th&gt;
-      &lt;th style=&quot;text-align: right&quot;&gt;Cool&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;col 3 is&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;right-aligned&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;$1600&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;col 2 is&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;centered&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;$12&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;zebra stripes&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;are neat&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;$1&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h2 id=&quot;images&quot;&gt;Images&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/_site/app-first.png&quot; alt=&quot;theme logo&quot; class=&quot;ioda&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Logo of &lt;em&gt;no style, please!&lt;/em&gt; theme&lt;sup id=&quot;fnref:4&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:4&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;hr data-content=&quot;footnotes&quot; /&gt;
-
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;this is a footnote. It should highlight if you click on the corresponding superscript number. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:2&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;hey there, i’m using no style please! &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:3&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;this is another footnote. &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:4&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;this is a very very long footnote to test if a very very long footnote brings some problems or not. I strongly hope that there are no problems but you know sometimes problems arise from nowhere. &lt;a href=&quot;#fnref:4&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Idan Levin</name></author><category term="example" /><summary type="html">Lorem ipsum1 dolor sit amet, consectetur adipiscing elit. Pellentesque vel lacinia neque. Praesent nulla quam, ullamcorper in sollicitudin ac, molestie sed justo. Cras aliquam, sapien id consectetur accumsan, augue magna faucibus ex, ut ultricies turpis tortor vel ante. In at rutrum tellus. this is a footnote. It should highlight if you click on the corresponding superscript number. &amp;#8617;</summary></entry></feed>
+&lt;p&gt;From &lt;a href=&quot;http://www.cancms.com/content/dummytext&quot;&gt;假文生成器， lorem ipsum Chinese&lt;/a&gt;&lt;/p&gt;</content><author><name>Idan Levin</name></author><category term="example2" /><summary type="html">Note: I took this test post from moving, which is another Jekyll theme which is better that this one so I should not have linked it because now you will decide to use it instead of mine.</summary></entry><entry><title type="html">Very Very Very Long Title And Very Very Very Short Content</title><link href="https://idan-levin.github.io/idanlevin.github.io//very-very-very-long-title-and-very-very-very-short-content.html" rel="alternate" type="text/html" title="Very Very Very Long Title And Very Very Very Short Content" /><published>2020-07-08T00:00:00+00:00</published><updated>2020-07-08T00:00:00+00:00</updated><id>https://idan-levin.github.io/idanlevin.github.io//very-very-very-long-title-and-very-very-very-short-content</id><content type="html" xml:base="https://idan-levin.github.io/idanlevin.github.io//very-very-very-long-title-and-very-very-very-short-content.html">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel lacinia neque. Praesent nulla quam, ullamcorper in sollicitudin ac, molestie sed justo. Cras aliquam, sapien id consectetur accumsan, augue magna faucibus ex, ut ultricies turpis tortor vel ante. In at rutrum tellus. Nullam vestibulum metus eu purus malesuada, volutpat mattis leo facilisis.&lt;/p&gt;</content><author><name>Idan Levin</name></author><category term="example" /><summary type="html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel lacinia neque. Praesent nulla quam, ullamcorper in sollicitudin ac, molestie sed justo. Cras aliquam, sapien id consectetur accumsan, augue magna faucibus ex, ut ultricies turpis tortor vel ante. In at rutrum tellus. Nullam vestibulum metus eu purus malesuada, volutpat mattis leo facilisis.</summary></entry></feed>
