@@ -3,9 +3,6 @@ layout: post
 category: blog_posts
 ---
 
-
-### preventing centralization risks from restaking 
-
 In the latest <a href='https://www.youtube.com/watch?v=aP9f_1v9Ulc'>Bankless</a> episode about restaking, Justin Drake highlighted a key risk that restaking protocols pose to Ethereum's decentralization.
 
 I want to explain this risk and offer an economic solution that I believe can solve it, and by this to prevent centralization risks from restaking protocols in the future. Let's start by explaining the risk itself first - stake centralization due to the existence of restaking services. We need to go back to Proposer-Builder-Separation (PBS) to understand this better:
@@ -75,8 +72,8 @@ There are obviously some open questions:
 - Most validators offering the optimal
 
 
-![1](/restaking1){:.ioda}
+![1](/1.png){:.ioda}
 
-![2](/restaking2){:.ioda}
+![2](/2.png){:.ioda}
 
 
