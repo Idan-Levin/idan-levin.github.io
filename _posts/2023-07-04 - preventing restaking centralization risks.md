@@ -75,8 +75,8 @@ There are obviously some open questions:
 - Most validators offering the optimal
 
 
-![1](/restaking1){:.ioda}
+![1](/restaking1.png){:.ioda}
 
-![2](/restaking2){:.ioda}
+![2](/restaking2.png){:.ioda}
 
 
