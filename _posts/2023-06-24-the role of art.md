@@ -3,9 +3,9 @@ layout: post
 category: blog_posts_not_done_yet
 ---
 
-### the role of art 
+### the role of art in digital society  
 
-"Art is the sneaky backdoor that let you slip in ideas into society subconscious"
+> "Art is the sneaky backdoor that let you slip in ideas into society subconscious"
 
 I find art in the crypto space to be a storng pillar in moving the industry forward. but I also find a lot of people that don't really understand art. 
 
@@ -16,7 +16,7 @@ Ask a few different people 'what is art' and you'll get a few different answers.
 
 #### what is art?
 
-The short answer is that art is a sandbox for mind experimentation, providing a "safe zone" for expressing controversial or non-conventional ideas. For the long version I'll first start with an exmple: 
+The short answer is that art is a sandbox for mind experimentation, providing a "safe zone" for expressing controversial or non-conventional ideas. To explain deeper I'll first start with an exmple: 
 
 Lets say you're talking with a few people you just met and you say something like 'I believe the sun is green'. What will they think? How will they respond to this saying? They will probably think that you are either not too smart, color blind, trying to get attention by saying something everyone knows is wrong, or something in that area. That is because everyone knows that the sun is not green, rather yellow, orange, or whitish. But certainly not green. We have a pretty deep consensus in society about what the color of the sun is, and what it is not. The consensus is based probably of the overlap of sunjective similar experience we are having when looking at the sun and interpreting its color in a certain way. 
 
