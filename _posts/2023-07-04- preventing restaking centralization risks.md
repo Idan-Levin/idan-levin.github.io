@@ -69,7 +69,8 @@ There are obviously some open questions:
 
 - Create an optimal portfolio of restaking services.
 - If the market accepts this as a standard, most users participating in restaking will likely choose the vanilla product used by others.
-- Most validators offering the optimal
+- Most validators offering the optimal portfolio alongside regular staking will ensure no single entity has an economic advantage.
+- Multiple optimal portfolios can be created to suit different risk profiles.
 
 
 ![1](/1.png){:.ioda}
