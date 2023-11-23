@@ -14,7 +14,7 @@ This framework helps us dissect the recent controversy surrounding Blast, a futu
 
 Bartek Kiepuszewski, founder of L2BEAT, which tracks rollup progress, also expressed frustration over Blast's <a href= 'https://twitter.com/bkiepuszewski/status/1726928121180631182'> rollup claims. </a>
 
-Yet, the rapid capture of significant liquidity cannot be overlooked. So, who is truly right in this scenario? It depends on your perspective. In the framework of the casino and tech ark, Blast currently leans heavily towards the casino ethos (>90%). Its deviation from rollup standards and its ambition to become a perpetual marketplace for NFTs clearly align it with casino interests. This has incensed the tech community, as they view Blast's approach as a deviation from the foundational principles of technological integrity and innovation. However, the allure of quick success and liquidity in the casino realm is undeniable.
+Yet, the rapid capture of significant liquidity cannot be overlooked. So, who is truly right in this scenario? It depends on your perspective. In the framework of the casino and tech ark, Blast currently leans heavily towards the casino ethos (>90%). Its deviation from rollup standards and its ambition to become a perpetual marketplace for NFTs clearly align it with casino interests. This has incensed the tech rollups builders, as they view Blast's approach as a deviation from the foundational principles of technological integrity and innovation. However, the allure of quick success and liquidity in the casino realm is undeniable.
 
 Ultimately, the Blast saga underscores once again the difference between the casino and the tech ark. 
 
