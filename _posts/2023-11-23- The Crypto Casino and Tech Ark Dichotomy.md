@@ -18,8 +18,7 @@ Yet, the rapid capture of significant liquidity cannot be overlooked. So, who is
 
 Ultimately, the Blast saga underscores once again the difference between the casino and the tech ark. 
 
-As crypto builders, users and investors we choose where do we get to live. So, what will it be anon, where will you live, the casino, or the tech ark?
-
+As crypto builders, users and investors we choose where do we get to live. So, what will it be, the casino or the tech ark?
 
 
 
