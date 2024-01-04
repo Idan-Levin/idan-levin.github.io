@@ -29,4 +29,5 @@ In terms of contribution to the efficiency of society:
 
 We need to bring the fun level of prediction markets closer to other activities. then, we'll reach the 'changing the world' zone - lots of fun and significant contribution.
 
+![1](/fun_zone.png){:.ioda}
 
