@@ -65,7 +65,7 @@ However, using Bitcoin still involves trust in hardware manufacturers and intern
 Blockchains provide a verifiable database and logic, creating coordination systems that require far less trust than current mechanisms (I really like Chris Dixon definition: “blockchains are computers that can make commitments”. This is another way of describing trust machines, commitments = trust enabler). The internet scaled information transfer globally, but the trust component is still lacking. Blockchains matter because they fill this gap. Enhancing trust chains with math and cryptography avoids the errors of human trust transmission, as seen in Chinese Whispers. 
 The idea is that humans don’t have to build these long trust chains, that gets eroded through time. You can use blockchains to reduce the length of these chains or make them more robust. More verifiability means more trust, and more trust means more collaboration.
 
-Blockchain biggest unlock is enabling to create more robust trust chains, with less errors, which will unlock new collaboration mechanisms. Scaling trust unlocks new phases of human coordination. This is why I believe blockchains are one of the greatest inventions of this century – it will enable us to collaborate on a whole new scale. The fight against trust entropy is here. We need blockchains to win.  
+This is why I believe blockchain is one of the greatest inventions of this century – it will enable us to collaborate on a whole new scale. The fight against trust entropy is here. We need blockchains to win.  
 
 
 
