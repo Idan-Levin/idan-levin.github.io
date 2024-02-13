@@ -32,7 +32,7 @@ For instance, consider the trust you place in a local restaurant versus a distan
 3.	**Immediate Feedback**: The restaurant addresses any concerns or special requests right away, enhancing your trust in their service.
 In this scenario, your trust in the restaurant is based on direct, repeated, and personal experiences. It's straightforward to verify because your interactions with the restaurant and its staff are regular and direct.
 
-### Trusting a Distant Food Manufacturer:
+### Trusting a distant food manufacturer:
 
 1.	**Lack of Personal Experience**: You've never visited the manufacturing facility, so you have no firsthand experience with the manufacturer's processes. You have no clue who are the shareholders of the company. 
 2.	**No Direct Observation**: You're unable to see the product's creation, the working conditions, or the quality control measures firsthand.
