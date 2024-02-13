@@ -30,6 +30,7 @@ For instance, consider the trust you place in a local restaurant versus a distan
 1.	**Personal Experience**: You've eaten at this restaurant many times and consistently found the food to be delicious and high-quality. You might have met the owners and know who they are. 
 2.	**Direct Observation**: You've witnessed the restaurant's cleanliness and the staff's meticulous care in food preparation and service.
 3.	**Immediate Feedback**: The restaurant addresses any concerns or special requests right away, enhancing your trust in their service.
+
 In this scenario, your trust in the restaurant is based on direct, repeated, and personal experiences. It's straightforward to verify because your interactions with the restaurant and its staff are regular and direct.
 
 ### Trusting a distant food manufacturer:
@@ -37,6 +38,7 @@ In this scenario, your trust in the restaurant is based on direct, repeated, and
 1.	**Lack of Personal Experience**: You've never visited the manufacturing facility, so you have no firsthand experience with the manufacturer's processes. You have no clue who are the shareholders of the company. 
 2.	**No Direct Observation**: You're unable to see the product's creation, the working conditions, or the quality control measures firsthand.
 3.	**Delayed or Limited Feedback**: Any issues you have with the product can only be addressed through customer service, which might be slow to respond or just not veru personal.
+
 In this case, verifying the food manufacturer is much more challenging. You might rely on reviews, brand reputation, or certifications, but these are indirect ways of establishing trust. The physical and experiential distance introduces more variables and uncertainties, complicating the establishment of trust compared to the local restaurant scenario. I call this concept Trust Entropy. 
 
 ![1](/entropy2.png){:.ioda}
