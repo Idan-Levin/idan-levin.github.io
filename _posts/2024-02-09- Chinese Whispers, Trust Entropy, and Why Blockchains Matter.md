@@ -23,20 +23,20 @@ Trust is everywhere, and society can't function without it. A mental model that 
  
 ## Trust and information
 
-I've been playing with the idea that **trust is a derivative of information, sharing similar properties** for quite some time now. In a trust chain, each node 'passes' trust to the next one. However, like in Chinese Whispers, there's trust erosion with each transfer. A 'loss factor' or ‘error rate’ accumulates in the network. Because of that, longer trust chains based on pure human interaction get’s weaker with size. This is an intuitive conclusion of you think of our daily life. It's easier to verify close interactions than distant ones.
+I've been playing with the idea that **trust is a derivative of information, sharing similar properties** for quite some time now. In a trust chain, each node 'passes' trust to the next one. However, like in Chinese Whispers, there's trust erosion with each transfer. A 'loss factor' or ‘error rate’ accumulates in the network. Because of that, longer trust chains based on pure human interaction get’s weaker with size. This is an intuitive conclusion if you think of your daily life - It's easier to verify close interactions than distant ones.
 For instance, consider the trust you place in a local restaurant versus a distant food manufacturer:
 
-### Trusting a Local Restaurant:
-1.	Personal Experience: You've eaten at this restaurant many times and consistently found the food to be delicious and high-quality. You might have met the owners and know who they are. 
-2.	Direct Observation: You've witnessed the restaurant's cleanliness and the staff's meticulous care in food preparation and service.
-3.	Immediate Feedback: The restaurant addresses any concerns or special requests right away, enhancing your trust in their service.
+### Trusting a local restaurant:
+1.	**Personal Experience**: You've eaten at this restaurant many times and consistently found the food to be delicious and high-quality. You might have met the owners and know who they are. 
+2.	**Direct Observation**: You've witnessed the restaurant's cleanliness and the staff's meticulous care in food preparation and service.
+3.	**Immediate Feedback**: The restaurant addresses any concerns or special requests right away, enhancing your trust in their service.
 In this scenario, your trust in the restaurant is based on direct, repeated, and personal experiences. It's straightforward to verify because your interactions with the restaurant and its staff are regular and direct.
 
 ### Trusting a Distant Food Manufacturer:
 
-1.	Lack of Personal Experience: You've never visited the manufacturing facility, so you have no firsthand experience with the manufacturer's processes. You have no clue who are the shareholders of the company. 
-2.	No Direct Observation: You're unable to see the product's creation, the working conditions, or the quality control measures firsthand.
-3.	Delayed or Limited Feedback: Any issues you have with the product can only be addressed through customer service, which might be slow to respond or unhelpful.
+1.	**Lack of Personal Experience**: You've never visited the manufacturing facility, so you have no firsthand experience with the manufacturer's processes. You have no clue who are the shareholders of the company. 
+2.	**No Direct Observation**: You're unable to see the product's creation, the working conditions, or the quality control measures firsthand.
+3.	**Delayed or Limited Feedback**: Any issues you have with the product can only be addressed through customer service, which might be slow to respond or just not veru personal.
 In this case, verifying the food manufacturer is much more challenging. You might rely on reviews, brand reputation, or certifications, but these are indirect ways of establishing trust. The physical and experiential distance introduces more variables and uncertainties, complicating the establishment of trust compared to the local restaurant scenario. I call this concept Trust Entropy. 
 
 ![1](/entropy2.png){:.ioda}
@@ -57,13 +57,13 @@ Source[^1]
 
 ## 'Don't trust, verify'
 
-'Don't trust, verify' is a phrase often heard in blockchain contexts. Public blockchains like Bitcoin and Ethereum allow users to verify the state (e.g., Bitcoin holdings) independently by running their own nodes, reducing reliance on third parties, and shortening the trust chain.
+'Don't trust, verify' is a phrase often heard in blockchain contexts. Public blockchains like Bitcoin and Ethereum allow users to verify the network state (e.g., Bitcoin holdings) independently by running their own nodes, reducing reliance on third parties, and shortening the trust chain.
 
 However, using Bitcoin still involves trust in hardware manufacturers and internet providers, among other things. Blockchain technology requires less trust than traditional systems and shortens the trust chain (but doesn't eliminate it entirely, which is a common mistake maximalist do). Open-source smart contracts on Ethereum let users verify contracts logic directly. These contracts can replace many trust-dependent societal functions, allowing for shorter trust chains in international settlements, and collaboration across the internet with very low trust barriers. 
 
 ## Why Blockchains
 
-Blockchains provide a verifiable database and logic, creating coordination systems that require far less trust than current mechanisms (I really like Chris Dixon definition: “blockchains are computers that can make commitments”. This is another way of describing trust machines, commitments = trust enabler). The internet scaled information transfer globally, but the trust component is still lacking. Blockchains matter because they fill this gap. Enhancing trust chains with math and cryptography avoids the errors of human trust transmission, as seen in Chinese Whispers. 
+Blockchains provide a verifiable database and logic, creating coordination systems that require far less trust than current mechanisms (I really like Chris Dixon definition: “blockchains are computers that can make commitments”. This is another way of describing trust machines, because commitments = trust enabler). The internet scaled information transfer globally, but the trust component is still lacking. Blockchains matter because they fill this gap. Enhancing trust chains with math and cryptography avoids the errors of human trust transmission, as seen in Chinese Whispers. 
 The idea is that humans don’t have to build these long trust chains, that gets eroded through time. You can use blockchains to reduce the length of these chains or make them more robust. More verifiability means more trust, and more trust means more collaboration.
 
 This is why I believe the blockchain is one of the greatest inventions of this century – it will enable us to collaborate on a whole new scale. The fight against trust entropy is here. We need blockchains to win.  
