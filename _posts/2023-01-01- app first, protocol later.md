@@ -65,4 +65,4 @@ Mirror is currently somewhere between phase 1 and 2 - there is usage and adoptio
 
 ### conclusion
 
-The 'app first, protocol later' strategy is anticipated to be a crucial approach for successful crypto projects in the next decade. This strategy consists of three stages: application first, protocol development, and protocol adoption. By employing this method, projects can build strong network effects and pave the way for the protocol's long-term success. As we move into the next decade of crypto networks, it's expected that many of the most impactful networks will adopt this strategy, leading to the development of numerous applications based on these protocols.
+The 'app first, protocol later' playbook is a crucial step for successful crypto projects that want their protocol to become adopted. This strategy consists of three stages: application first, protocol development, and protocol adoption. By employing this method, projects can build strong network effects and pave the way for the protocol's long-term adoption. 
