@@ -70,7 +70,7 @@ Quotes:
 
 ### Novel / Fiction 
 
- <a href='https://www.amazon.com/Catch-22-50th-Anniversary-Joseph-Heller/dp/1451626657'>Catch-22</a> - Catch 22 has so many quoates that I admire. It effectively portrays the absurdity of war and highlights the illogical situations individuals face when entangled in a larger system.
+ <a href='https://www.amazon.com/Catch-22-50th-Anniversary-Joseph-Heller/dp/1451626657'>Catch-22</a> - Catch 22 has so many quotes that I admire. It effectively portrays the absurdity of war and highlights the illogical situations individuals face when entangled in a larger system.
 
  Quotes:
 
