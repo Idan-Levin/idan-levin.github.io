@@ -5,7 +5,7 @@ category: blog_posts
 ---
 
 The 2023 price rally in Solana has ignited a fiery 'geeky' discussion on X between developer communities regarding different blockchain architectures.
-It is quite common to watch tribes of developers and investors in crypto land fighting over what is the best/right tech, and "modular vs. monolithic" is the current hot discussion.
+It is quite common to watch tribes of developers and investors in crypto land fighting over what is the best/right tech, and 'modular vs. monolithic' is the current hot discussion.
 
 So, it is worthwhile explaining what modular and monolithic are, and why it matters:
 
