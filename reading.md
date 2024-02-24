@@ -5,7 +5,7 @@ title: my favorite readings
 
 ### Economics/ Politics 
 
-<a href='https://www.amazon.com/Sovereign-Individual-Mastering-Transition-Information/dp/0684832720'>The Sovereign Individual</a> - I believe this book provides a great mental model of the economic future we will encounter in our lifetime. The Sovereign Individual explores the relationship between technological innovation and megapolitical structures (such as nation-states or the church before the 18th century). Many of the theories presented in this book were new to me, particularly regarding the relationship between how humans organize themselves in large groups and the retuen on violence (a term they use a lot) and technological innovation.
+<a href='https://www.amazon.com/Sovereign-Individual-Mastering-Transition-Information/dp/0684832720'>The Sovereign Individual</a> - I believe this book provides a great mental model of the economic future we will encounter in our lifetime. The Sovereign Individual explores the relationship between technological innovation and megapolitical structures (such as nation-states or the church before the 18th century). Many of the theories presented in this book were new to me, particularly regarding the relationship between how humans organize themselves in large groups and the return on violence (a term they use a lot) and technological innovation.
 
 The book provides great examples of megapolitical shifs, such as how the invention of the printing press and gunpowder gave rise to the concept that we now know as nation-states.
 
