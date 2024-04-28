@@ -72,7 +72,7 @@ We can play with the mechanism behind Degen to create a wide design space of ext
 
 1. **Other content-enhancing coins –** Can we create an AI coin that gets tipped for excellent AI technical content? Or content about food for the foodies? How granular can we take the idea of content enhancement? Will we have tiny micro status communities in the future for every niche vertical?
 2. **Farcaster clients based on the Degen reputation system** – create another client that prioritizes Degen holdings when deciding which content to show in the feed. This will be a Degen-first client, where the Degen community can have full control over curation. Should bought Degen receive the same weight as earned Degen?
-3. **Soul bound tipping (non-transferableEx tipping)** – tip with coins in a non-transferable way, which could create a long-term social status for the address but also is less speculative and harder to bootstrap.
+3. **Soul bound tipping (non-transferable tipping)** – tip with coins in a non-transferable way, which could create a long-term social status for the address but also is less speculative and harder to bootstrap.
 
 ### Conclusion
 
