@@ -4,7 +4,7 @@ category: blog_posts
 
 ---
 
-Why don't I believe in monolithic blockchains?
+Why I don't believe in monolithic blockchains?
 
 Explaining from first principles:
 
