@@ -1,412 +1,318 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="https://idan-levin.github.io/idanlevin.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://idan-levin.github.io/idanlevin.github.io//" rel="alternate" type="text/html" /><updated>2023-07-04T08:04:52+00:00</updated><id>https://idan-levin.github.io/idanlevin.github.io//feed.xml</id><title type="html">Idan Levin</title><subtitle>A (nearly) no-CSS, fast, minimalist Jekyll theme.
-</subtitle><author><name>Idan Levin</name></author><entry><title type="html">preventing restaking centralization risks</title><link href="https://idan-levin.github.io/idanlevin.github.io//preventing-restaking-centralization-risks.html" rel="alternate" type="text/html" title="preventing restaking centralization risks" /><published>2023-07-04T00:00:00+00:00</published><updated>2023-07-04T00:00:00+00:00</updated><id>https://idan-levin.github.io/idanlevin.github.io//%20preventing%20restaking%20centralization%20risks</id><content type="html" xml:base="https://idan-levin.github.io/idanlevin.github.io//preventing-restaking-centralization-risks.html">&lt;p&gt;In the latest &lt;a href=&quot;https://www.youtube.com/watch?v=aP9f_1v9Ulc&quot;&gt;Bankless&lt;/a&gt; episode about restaking, Justin Drake highlighted a key risk that restaking protocols pose to Ethereum’s decentralization.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="https://idan-levin.github.io/idanlevin.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://idan-levin.github.io/idanlevin.github.io//" rel="alternate" type="text/html" /><updated>2024-06-02T09:58:45+00:00</updated><id>https://idan-levin.github.io/idanlevin.github.io//feed.xml</id><title type="html">Idan Levin</title><subtitle>&lt;strong&gt;&quot;Dance like no one is watching, write like no one is reading.&quot;&lt;/strong&gt;
+</subtitle><author><name>Idan Levin</name></author><entry><title type="html">why don&amp;#8217;t i believe in monolithic blockchains (from first principles)</title><link href="https://idan-levin.github.io/idanlevin.github.io//why-don-t-i-believe-in-monolithic-blockchains-from-first-principles.html" rel="alternate" type="text/html" title="why don&amp;#8217;t i believe in monolithic blockchains (from first principles)" /><published>2024-05-20T00:00:00+00:00</published><updated>2024-05-20T00:00:00+00:00</updated><id>https://idan-levin.github.io/idanlevin.github.io//%20Why%20don't%20I%20believe%20in%20monolithic%20blockchains%20(from%20first%20principles)</id><content type="html" xml:base="https://idan-levin.github.io/idanlevin.github.io//why-don-t-i-believe-in-monolithic-blockchains-from-first-principles.html">&lt;p&gt;Why don’t I believe in monolithic blockchains?&lt;/p&gt;
 
-&lt;p&gt;I want to explain this risk and offer an economic solution that I believe can solve it, and by this to prevent centralization risks from restaking protocols in the future. Let’s start by explaining the risk itself first - stake centralization due to the existence of restaking services. We need to go back to Proposer-Builder-Separation (PBS) to understand this better:&lt;/p&gt;
-
-&lt;p&gt;One of the great successes of PBS was that it leveled the playing field for validators. With PBS, every validator that tapped into the PBS relay got to enjoy the same yield for staking (and offer it to its delegating stakers). The idea here is that there isn’t any economic advantage for any validator from building more profitable blocks than others. Hence users are indifferent in delegating their stake between the different validators because all the returns are the same.&lt;/p&gt;
-
-&lt;p&gt;Post PBS, there isn’t a return-to-scale advantage to any validator. Return to scale for some validators enables them to have better returns, and consequentially to become very dominant by attracting more stake than other validators (=centralization risk). So the key principle to eliminating centralization risks is not allowing any validator to have an economic advantage over other validators (especially advantages that compounds with size).&lt;/p&gt;
-
-&lt;h3 id=&quot;why-restaking-gets-us-back-to-stake-centralization&quot;&gt;why restaking gets us back to stake centralization?&lt;/h3&gt;
-
-&lt;p&gt;Now let’s move to restaking, and why it changes this dynamic:&lt;/p&gt;
-
-&lt;p&gt;Eigen Layer and similar restaking services allow an infinite number of new permissionless services to be built on top of Ethereum, using the same stake. This creates an infinite space for inventing new permissionless services built on top of Ethereum. But this also creates a new type of centralization risk that PBS was aimed at solving - Restaking protocols will allow validators to tap into new staking services in addition to just validating Ethereum consensus.&lt;/p&gt;
-
-&lt;p&gt;Eventually, these validators can offer better returns to their delegators by not just offering plain Ethereum staking yields. Now we can get some additional yield on top of Ethereum staking yield! yay!&lt;/p&gt;
-
-&lt;p&gt;After restaking, validators that tap into restaking services can offer higher APY to their delegators! How much higher? Well, it depends on how many staking services they eventually tap into (you can theoretically tap into how many you would like). How will validators determine which restaking services they should tap into and offer to their stake delegators? Analyzing a specific service built on restaking might not be such an easy job as one might think. Understanding the risks from new consensus protocols, oracles, or other permissionless services built using restaking protocols, is not an easy job!&lt;/p&gt;
-
-&lt;p&gt;As a validator, you need to have a very deep understanding of the service you tap into and offer to your stake delegators, in order to truly understand the risks and potential rewards.&lt;/p&gt;
-
-&lt;p&gt;Stake delegators, and subsequently capital inflows, will likely avoid validators who mindlessly tap into restaking services without fully understanding the associated risks. They will most likely prefer to delegate their stake to sophisticated validators with reputations that can underwrite restaking services successfully.&lt;/p&gt;
-
-&lt;p&gt;This presents a significant challenge - sophisticated validators with more resources and deeper pockets can better understand the risks and rewards of specific restaking services. Over time, this advantage can accumulate and result in a better reputation for the validator that has more resources. This returns us to the starting point - some validators will have a return to scale, which will allow them to attract more capital. This leads to centralization risks, the very issue PBS was designed to solve!&lt;/p&gt;
-
-&lt;p&gt;The end game here is that a few validators that can underwrite restaking services better (and communicate it outwards) will gain most of the stake and reputation. an we get out of this centralization pitfall in an elegant way and still enjoy restaking innovation?&lt;/p&gt;
-
-&lt;p&gt;Yes!&lt;/p&gt;
-
-&lt;p&gt;The solution, in short, is standardizing a restaking aggregation service that all validators can tap into, a ‘one size fits all’ approach. This is akin to an Exchange-Traded Fund (ETF) in traditional finance.&lt;/p&gt;
-
-&lt;p&gt;Before we get into the solution, there are some simple assumptions we need to make first -&lt;/p&gt;
+&lt;p&gt;Explaining from first principles:&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;There will be many restaking services, probably hundreds of them eventually.&lt;/li&gt;
-  &lt;li&gt;They will have a different risk-reward ratio.&lt;/li&gt;
-  &lt;li&gt;Pareto rule will apply to their success, meaning few services (could be tens) will probably become very dominant, so if you will rank services by their dominance you will get a pareto distribution.&lt;/li&gt;
-  &lt;li&gt;Now let’s introduce a classical finance theory called ‘portfolio theory’, coined by Harry Markowitz (who won the Nobel prize for this).&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Blockchains are computers.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Computer history has shown us that when you build more bandwidth, storage, and compute capacity, developers build more demanding apps and use these excess resources.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;That is why, no matter how many transactions/gas you can process per second, if you’re a successful blockchain, it will never be enough.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;This will result in one of two scenarios: fees go up, or you need to increase hardware/networking requirements for nodes (which leads to centralization).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;You can’t solve this with gadgets like differential pricing for high-demand pieces of state. You just isolate the problem from interfering with other things (high-demand apps will still be expensive). It’s still an issue.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;All roads lead to execution sharding. Call it whatever you want (shards/rollups/subchains).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Once you go to sharding the execution and decoupling execution and consensus, what do you need for a base settlement layer?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;But even before that, what don’t you (really) need? - parallel execution, fancy networking gadgets, or some crazy VM.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;What do you actually need? Heavy economic security, verifiability of every piece of the stack, heavy research on potential black swans and security risks, support for validation of shards/rollups state transitions, support for escape hatches to prevent censorship in rollups, and a code language that is battle-tested and free of bugs.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;These things have massive network effects, and I don’t think any other chain other than Ethereum is close to achieving these things. Does this make me a maxi? No. I thought about these things from the ground up, and if any other chain aims toward these futures, I’ll be there to support it.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;And lastly, where can I be wrong and where do other smart people disagree with me?&lt;/p&gt;
+  &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;Portfolio theory explains how to allocate an investment portfolio in an optimal way. We can think of each restaking service as a specific asset and the combination of different restaking services as a portfolio.&lt;/p&gt;
+&lt;p&gt;I think the nature of the disagreement lies in the core assumption of what a blockchain is. If you see it as a Nasdaq substitute or some purely financial system, then your mental model is: if I can get a blockchain to x TPS, I’m done. This point of view assumes there is a saturation point for demand, like Visa or Google queries, and once you reach it, demand will reach an equilibrium. I think this perspective comes from too much skeuomorphism around thinking of blockchains in the context of finance. But anyway, this is the core disagreement between monolithic and modular blockchains. If blockchains are computers, I think that monolithic blockchains will lose the battle of scaling. If blockchains are Visa substitutes, monolithic blockchains will win over the complex and fragmented modular blockchains.&lt;/p&gt;
 
-&lt;p&gt;What if we could select an optimal mix of restaking services?&lt;/p&gt;
+&lt;p&gt;Whatever the case, long live blockchains.&lt;/p&gt;</content><author><name>Idan Levin</name></author><category term="blog_posts" /><summary type="html">Why don’t I believe in monolithic blockchains?</summary></entry><entry><title type="html">come for the memecoin, stay for the network</title><link href="https://idan-levin.github.io/idanlevin.github.io//come-for-the-memecoin-stay-for-the-network.html" rel="alternate" type="text/html" title="come for the memecoin, stay for the network" /><published>2024-05-20T00:00:00+00:00</published><updated>2024-05-20T00:00:00+00:00</updated><id>https://idan-levin.github.io/idanlevin.github.io//%20come%20for%20the%20memecoin,%20stay%20for%20the%20network</id><content type="html" xml:base="https://idan-levin.github.io/idanlevin.github.io//come-for-the-memecoin-stay-for-the-network.html">&lt;p&gt;I love the idea of business ‘entry points’ that Chris Dixon’s famous blog post, &lt;a href=&quot;https://cdixon.org/2015/01/31/come-for-the-tool-stay-for-the-network&quot;&gt;‘come for the tool, stay for the network’&lt;/a&gt;, describes. The playbook of attracting users to some tool which gives them immediate benefit, and then building a network based on this attraction, always felt brilliant to me. Instagram is a famous example in which it started as a filter tool (single-player mode) and then extended into a social network (multiplayer mode).&lt;/p&gt;
 
-&lt;p&gt;That will be great because instead of having lots of discretion for each validator in picking the different services to tap into and offer to restakers, they can just pick the optimal portfolio. And then it doesn’t matter which validator you delegate your stake to because they offer the same optimal portfolio. The optimal portfolio is great and advances decentralization, because there is no discretion in picking staking services! Now every validator that wants to offer restaking, can offer the vanilla product (which is the optimal portfolio of restaking services), and assuming this will be the market-preferable option, we are again, evening the playing field for validators!&lt;/p&gt;
+&lt;p&gt;I think this playbook happens in quite a similar way around crypto memecoins or generally speculation. Users that speculate on memecoins need to jump through some fiery hoops to get to the point where they can purchase the memecoins - they need to download a wallet, onramp (most new memecoins are not listed immediately on centralized exchanges), and learn to interact with the respective blockchain. A lot of time this also requires some degree of technical savviness, because these new memecoins are only available in new applications that live on the crypto frontier.&lt;/p&gt;
 
-&lt;p&gt;This also solves the problem of individual restakers that hold LSTs and want to restake by themselves. In their case the issue is that stake will accumulate to specific services, which might get too much of Ethereum stake used by them. Instead of having to underwrite a specific service, the restaker can just choose the optimal portfolio and enjoy diversification of restaking. This will ensure that the stake flowing to some services will not make them ‘too big to fail’ (because they accumulated too much stake).&lt;/p&gt;
+&lt;p&gt;After this initial bootstrapping phase (‘come for the memecoin’), there is a group of users that went through the learning curve of using the chain and its tooling, plus some initial liquidity they seeded. Because capital that flowed into the chain doesn’t easily flow out, there is now some ‘potential energy’ in the chain in the form of educated users and some initial locked capital.&lt;/p&gt;
 
-&lt;p&gt;You may ask, why should this work? Why would restakers prefer an ‘optimal portfolio’?&lt;/p&gt;
+&lt;p&gt;Builders looking to build some new blockchain apps now have a distribution of users they can interact with. Getting users that already onboarded the chain is much easier than persuading them to jump through the fiery hoops of the learning curve from scratch. So although memecoin speculation is a casino game, it does seed some potential in the respective chain. That is why for new blockchains without any substantial usage, becoming a short-term casino has some obvious benefits.&lt;/p&gt;</content><author><name>Idan Levin</name></author><category term="blog_posts" /><summary type="html">I love the idea of business ‘entry points’ that Chris Dixon’s famous blog post, ‘come for the tool, stay for the network’, describes. The playbook of attracting users to some tool which gives them immediate benefit, and then building a network based on this attraction, always felt brilliant to me. Instagram is a famous example in which it started as a filter tool (single-player mode) and then extended into a social network (multiplayer mode).</summary></entry><entry><title type="html">community social status and the curious case of degen 🎩</title><link href="https://idan-levin.github.io/idanlevin.github.io//community-social-status-and-the-curious-case-of-degen.html" rel="alternate" type="text/html" title="community social status and the curious case of degen 🎩" /><published>2024-04-28T00:00:00+00:00</published><updated>2024-04-28T00:00:00+00:00</updated><id>https://idan-levin.github.io/idanlevin.github.io//%20community%20social%20status%20and%20the%20curious%20case%20of%20Degen%20%F0%9F%8E%A9</id><content type="html" xml:base="https://idan-levin.github.io/idanlevin.github.io//community-social-status-and-the-curious-case-of-degen.html">&lt;p&gt;In 2019, Eugen Wei published an incredible blog post titled ‘&lt;a href=&quot;https://www.eugenewei.com/blog/2019/2/19/status-as-a-service&quot;&gt;Status-as-a-Service&lt;/a&gt;’. He analyzed how social media platforms act as status-generating services, where users perform activities to gain social capital, similar to a video game where status is the score.&lt;/p&gt;
 
-&lt;p&gt;We have a lot of evidence from traditional markets that ETFs are a great efficient solution for long-term investment (a big portion of public funds are held in these portfolios). There are some good reasons for that:&lt;/p&gt;
+&lt;p&gt;He theorized that social platforms operate by offering users status in exchange for engaging content, which in turn helps these platforms grow. His description encapsulates really well the essence of the social media game and provides a great mental model to think about the future of social networks and status-creation over the internet.&lt;/p&gt;
+
+&lt;h2 id=&quot;algorithm-as-a-status-controller&quot;&gt;Algorithm as a Status Controller&lt;/h2&gt;
+
+&lt;p&gt;We can view status as the currency of these social networks. On platforms like Twitter, likes, retweets, and follows are considered the ingredients of social status. Users create engaging tweets about news, culture, or entertainment and populate the town square of Twitter. In return, they gain followers which is akin to status.&lt;/p&gt;
+
+&lt;p&gt;Platforms control the distribution of status by managing the feed algorithm. They determine what content is seen and by whom. By designing these algorithms, platforms can influence which actions are rewarded with visibility. In response, users adjust their strategies to the algorithm to gain more status. The algorithm is the ‘invisible hand’ that exists in social media, dictating the fate of how social status is created or destroyed. Shadow banning, the practice of hiding a user’s visibility from other users’ feeds, is the secret weapon of social networks, allowing the platform to completely erase a user’s social status.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/degen1.png&quot; alt=&quot;Degen Image 1&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;social-status-in-web3&quot;&gt;Social Status in Web3&lt;/h2&gt;
+
+&lt;p&gt;Web3 social networks innovate on the idea of status generation and control. Farcaster would probably be the best place to analyze and estimate today how web3 social networks will impact the distribution of online — or onchain — status in the future.&lt;/p&gt;
+
+&lt;p&gt;Farcaster is a relatively new, decentralized web3 social network that has shown solid growth in 2024. It grew from 2,000 active users at the beginning of the year to over 80,000 DAUs as of today, thanks to the introduction of &lt;a href=&quot;https://docs.farcaster.xyz/learn/what-is-farcaster/frames&quot;&gt;Frames&lt;/a&gt; and &lt;a href=&quot;https://docs.farcaster.xyz/learn/what-is-farcaster/channels&quot;&gt;channels&lt;/a&gt;, which were highly successful features that enabled developers to build ‘mini-apps’ on top.&lt;/p&gt;
+
+&lt;p&gt;The social graph and social activity in Farcaster are recorded on the protocol, a peer-to-peer network which holds the replicated state of the network. However, users usually interact with the protocol through the Warpcast client, which looks and feels much like the Twitter app but with additional features.&lt;/p&gt;
+
+&lt;p&gt;The team that created the Farcaster protocol also maintains Warpcast, where most of the activity occurs. &lt;strong&gt;This means that the population of the social graph on Farcaster, the protocol, happens mostly with the intent of the Warpcast client, which controls the algorithm.&lt;/strong&gt; This is similar to web2, where the team controlling the client also controls the algorithm and status creation.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-curious-case-of-degen&quot;&gt;The Curious Case of Degen&lt;/h2&gt;
+
+&lt;p&gt;Degen began as a community coin for the Degen channel on Warpcast in January 2024. The community held a contest to choose a logo and branding, and the purple top hat was selected 🎩. The Degen token grew organically within Warpcast, with its first utility being a tipping system.&lt;/p&gt;
+
+&lt;p&gt;This system was straightforward—users could reply to casts with ‘X $Degen’ to indicate the tip they wanted to give. The offchain tipping system scanned Farcaster, summed up all the Degen tips, and airdropped them into the respective user’s wallet (this type of experiment was also made in 2020 with the &lt;a href=&quot;https://www.reddit.com/r/CryptoCurrency/wiki/moons_wiki/&quot;&gt;$MOON coin&lt;/a&gt; on r/CryptoCurrency under a community points product rolled out by Reddit. This product was &lt;a href=&quot;https://www.reddit.com/r/CryptoCurrency/comments/17a33ql/serious_sunsetting_community_points_beta_and/&quot;&gt;sunset&lt;/a&gt; on Oct-23).&lt;/p&gt;
+
+&lt;p&gt;This was only possible because of the open nature of Farcaster; the network is always readable, and unlike other social networks that tightly control their APIs, an external system can always read the state of the network. This was also facilitated by every address in Farcaster being linked to a wallet address, making it easy to airdrop tokens to it.&lt;/p&gt;
+
+&lt;p&gt;The early Degen team made two brilliant decisions:&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Optimal portfolios are diversified, and diversification, when done in a good way, eliminates risk.&lt;/li&gt;
-  &lt;li&gt;Users don’t have the capacity to actually choose across tens/hundreds of different restaking services.&lt;/li&gt;
-  &lt;li&gt;Buy-and-hold (restake-and-hold in our case) is a great strategy for passive investors.&lt;/li&gt;
-  &lt;li&gt;We can safely assume that having a market-agreed-upon efficient portfolio of restaking services can become very popular by restakers.&lt;/li&gt;
+  &lt;li&gt;Users could tip without any wallet transaction, just by replying in casts (very low friction).&lt;/li&gt;
+  &lt;li&gt;The Degen distributions were created out of thin air; every day users received an allowance, so it didn’t feel like spending something, but rather like contributing to someone.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;There are obviously some open questions:&lt;/p&gt;
+&lt;p&gt;These two brilliant decisions created something entirely new, which is the subject I want to get to—a new social status distribution system.&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;How do we agree on such an optimal portfolio and what are the criteria for getting in as a restaking service?&lt;/li&gt;
-  &lt;li&gt;Will this standard create overdominance of a specific set of services?&lt;/li&gt;
-  &lt;li&gt;Can we get a market consensus on this?&lt;/li&gt;
-  &lt;li&gt;Should we create multiple optimal portfolios catering to different risk levels (high risk, medium risk, or low risk)?&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h2 id=&quot;degen-as-a-status-distribution-mechanism&quot;&gt;Degen as a Status Distribution Mechanism&lt;/h2&gt;
 
-&lt;h3 id=&quot;summary&quot;&gt;Summary:&lt;/h3&gt;
+&lt;p&gt;One side effect of the Degen tipping system was that it created an alternate universe to distribute status on the Warpcast client, independent of the Warpcast feed algorithm. Tipping was permissionless, and suddenly there was another status creation game outside the control of Warpcast. Users that seek to play in the status generation game could now play two types of games - the traditional game, which is getting likes and follows on Warpcast, and the Degen game, which was writing content that the Degen community would reward with tips.&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;Create an optimal portfolio of restaking services.&lt;/li&gt;
-  &lt;li&gt;If the market accepts this as a standard, most users participating in restaking will likely choose the vanilla product used by others.&lt;/li&gt;
-  &lt;li&gt;Most validators offering the optimal&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;The status creation is so significant that after a user receives the Degen token (an ERC20), they completely control it and can port its status anywhere outside of the Farcaster ecosystem. Meaning, Degen social status is portable, unlike legacy status created in the web2 systems.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/1.png&quot; alt=&quot;1&quot; class=&quot;ioda&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;This created an external system that rewards users with social status for good content, which is outside the control of the core social media algorithm.&lt;/strong&gt; This is only technically feasible because Farcaster is open, which explains why we don’t really see these activities outside of web3.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/2.png&quot; alt=&quot;2&quot; class=&quot;ioda&quot; /&gt;&lt;/p&gt;</content><author><name>Idan Levin</name></author><category term="blog_posts" /><summary type="html">In the latest Bankless episode about restaking, Justin Drake highlighted a key risk that restaking protocols pose to Ethereum’s decentralization.</summary></entry><entry><title type="html">The role of art</title><link href="https://idan-levin.github.io/idanlevin.github.io//the-role-of-art.html" rel="alternate" type="text/html" title="The role of art" /><published>2023-06-24T00:00:00+00:00</published><updated>2023-06-24T00:00:00+00:00</updated><id>https://idan-levin.github.io/idanlevin.github.io//the%20role%20of%20art</id><content type="html" xml:base="https://idan-levin.github.io/idanlevin.github.io//the-role-of-art.html">&lt;h3 id=&quot;the-role-of-art&quot;&gt;the role of art&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/degen2.png&quot; alt=&quot;Degen Image 2&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;“Art is the sneaky backdoor that let you slip in ideas into society subconscious”&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;A unique Degen Actions button was added to see how much Degen an address holds (‘Bag Bias’) and what its allowance status is (‘$DEGEN stats). This allows to add social status to each account not only in traditional terms, but also with the new layer of Degen social status. You can now know the Degen social status of each account.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;I find art in the crypto space to be a storng pillar in moving the industry forward. but I also find a lot of people that don’t really understand art.&lt;/p&gt;
+&lt;p&gt;So if I had to describe Degen from this standpoint, I would probably say:&lt;/p&gt;
 
-&lt;p&gt;I beleive art in in general has a really important role in the advancement of society (I know some of you are probably scratching their head right now, and maybe not connceting art and technology or societal advancements). Most people just don’t really pay too much atention to it. So I want to explain what is art &lt;strong&gt;to me&lt;/strong&gt; and why I believe it so important.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;“Degen is an autonomous social status network, governed by the Degen community, that creates portable social network status.”&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Ask a few different people ‘what is art’ and you’ll get a few different answers. This is great, and actually after diving into my argument of why art is imortant you will see that this is exactly the purpose of art!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/degen3.png&quot; alt=&quot;Degen Image 3&quot; /&gt;&lt;/p&gt;
 
-&lt;h4 id=&quot;what-is-art&quot;&gt;what is art?&lt;/h4&gt;
+&lt;p&gt;When I sent this post for review, I got some feedback that there is another angle to the Degen tipping game which is - Degen is more about paying for good content and less about social status. But because of the close relationship between writing good content and earning social status in the platform (in the form of followers, shares, and likes), I think it makes sense to think of Degen distribution as both a form of money and status, and you can almost use both of these interchangeably.&lt;/p&gt;
 
-&lt;p&gt;The short answer is that art is a sandbox for mind experimentation, providing a “safe zone” for expressing controversial or non-conventional ideas. For the long version I’ll first start with an exmple:&lt;/p&gt;
+&lt;h3 id=&quot;buying-vs-earning&quot;&gt;Buying vs. earning&lt;/h3&gt;
 
-&lt;p&gt;Lets say you’re talking with a few people you just met and you say something like ‘I believe the sun is green’. What will they think? How will they respond to this saying? They will probably think that you are either not too smart, color blind, trying to get attention by saying something everyone knows is wrong, or something in that area. That is because everyone knows that the sun is not green, rather yellow, orange, or whitish. But certainly not green. We have a pretty deep consensus in society about what the color of the sun is, and what it is not. The consensus is based probably of the overlap of sunjective similar experience we are having when looking at the sun and interpreting its color in a certain way.&lt;/p&gt;
+&lt;p&gt;However, there is one caveat to Degen status creation: you can buy Degen. Since the token is completely tradable, you can’t really view Degen holdings as pure status because some might have been acquired organically and some might have been bought on the markets. It has yet to be known and explored how the tradability of Degen will impact its status formation, but there is a wide design space to explore which includes different tipping systems and their status creation capabilities (I list a few in the next section, such as soul bound tipping).&lt;/p&gt;
 
-&lt;p&gt;But lets say you meet a some new people and show them a painting you’ve made, with green sun. “This is my latest masterpiece!” you say.
-Maybe its abstract art, maybe its not the best art, maybe not everyone will find your art beautiful. But that’s ok by the “rules”. The “rules” are that art can be subjective, and it doesn’t have to describe reality in an accurate way. Quite the contrary, we teach childern to be expressive and experiment with their imagination and art, and try to do creative things with art to expand their mind.&lt;/p&gt;
+&lt;h3 id=&quot;exploring-new-ideas&quot;&gt;Exploring New Ideas&lt;/h3&gt;
 
-&lt;p&gt;So people might not like the artwork itself, but they probably won’t tell you that you are not smart because you painted a green sun.&lt;/p&gt;
-
-&lt;p&gt;The bottom line with this short story, is that art creates a safe zone for mind experminets. In art, you can bend reality. You can say anything, even very controversial things.&lt;/p&gt;
-
-&lt;h4 id=&quot;so-how-does-this-help-society-to-advance&quot;&gt;So how does this help society to advance?&lt;/h4&gt;
-
-&lt;p&gt;They say that science advances one funeral at a time. The issue is, that people are wired to have consensus. When someone challages consensus, the usual societal response is to object. We know a few high profile example of this from human history:&lt;/p&gt;
-
-&lt;p&gt;Galileo Galilei, the 17th-century Italian astronomer, faced significant persecution not for asserting that the Earth was round, but for endorsing the heliocentric model, which posits that the Earth and other planets revolve around the Sun. This contradicted the then-dominant geocentric model, which claimed that the Earth was the center of the universe, a belief upheld by the Catholic Church. As a result of his assertions, Galileo was tried by the Roman Inquisition in 1633, found “vehemently suspect of heresy,” and spent the rest of his life under house arrest. This historical episode underscores the challenges faced by pioneers of scientific thought, even when their ideas are eventually proven correct.&lt;/p&gt;
-
-&lt;p&gt;Galileo went against the consensus, was right, but was damned to spend his life in misery for that.&lt;/p&gt;
-
-&lt;p&gt;Lets go throguh another example.&lt;/p&gt;
-
-&lt;p&gt;Albert Einstein, a pioneering physicist of the 20th century, faced considerable criticism and prejudice for his groundbreaking theory of relativity. After he published his theory, it was disparagingly referred to as “Jewish Science” by some detractors, particularly during the rise of Nazi Germany. This was a period marked by anti-Semitic sentiment, and Einstein’s revolutionary ideas were targeted due to his Jewish heritage. Despite the resistance and bigotry, Einstein’s theory of relativity has since been validated and forms the basis of modern physics. This instance mirrors the trials faced by many revolutionary thinkers, who, despite going against prevailing consensus and enduring condemnation, are later proven correct, thereby advancing our understanding of the world.&lt;/p&gt;
-
-&lt;p&gt;What do we learn from this? that humans are speced to resist change, and to support consensus. When consensus changes, even the smartest people in the room might get upset and reject it.&lt;/p&gt;
-
-&lt;p&gt;That’s where are comes in. Art lets you slip ideas that are non consensus throughout the ‘back door’. Because are is a safe zone, and you can say whatever you want because its “just art”, it allows you to slip in and test ideas that are non consensus in a safe way (and without getting mocked by socielty, or trailed if you’re Galileo).&lt;/p&gt;
-
-&lt;p&gt;Some historical example:&lt;/p&gt;
-
-&lt;p&gt;Pablo Picasso’s “Les Demoiselles d’Avignon”: This painting is considered a groundbreaking work of art because it broke away from traditional European painting in its depiction of distorted and deconstructed bodies, which can be seen as a representation of Picasso’s “mind experimentation.”&lt;/p&gt;
-
-&lt;p&gt;Marcel Duchamp’s “Fountain”: Duchamp’s work, a urinal signed “R. Mutt,” challenged conventional notions of what constitutes art, forcing society to reconsider its definition.&lt;/p&gt;
-
-&lt;p&gt;Banksy’s Street Art: Banksy’s graffiti and installations often contain biting social commentary and challenge societal norms and authorities. His work is a contemporary example of art being used to question consensus and promote societal advancement.&lt;/p&gt;
-
-&lt;p&gt;Yoko Ono’s “Cut Piece”: This performance art piece saw Ono inviting audience members to cut off her clothing with a pair of scissors, challenging societal norms around gender, power, and violence.&lt;/p&gt;
-
-&lt;p&gt;This ideas do not skip crypto. Crypto art lets you&lt;/p&gt;</content><author><name>Idan Levin</name></author><category term="blog_posts_not_done_yet" /><summary type="html">the role of art</summary></entry><entry><title type="html">My reading list</title><link href="https://idan-levin.github.io/idanlevin.github.io//my-reading-list.html" rel="alternate" type="text/html" title="My reading list" /><published>2023-06-23T00:00:00+00:00</published><updated>2023-06-23T00:00:00+00:00</updated><id>https://idan-levin.github.io/idanlevin.github.io//My%20reading%20list</id><content type="html" xml:base="https://idan-levin.github.io/idanlevin.github.io//my-reading-list.html">&lt;p&gt;I try to read a couple of hours every week. Here is a list of my favorite books:&lt;/p&gt;
-
-&lt;h2 id=&quot;economics&quot;&gt;Economics&lt;/h2&gt;
-
-&lt;h2 id=&quot;philloshopy&quot;&gt;Philloshopy&lt;/h2&gt;
-
-&lt;h2 id=&quot;fiction&quot;&gt;Fiction&lt;/h2&gt;</content><author><name>Idan Levin</name></author><category term="Reading" /><summary type="html">I try to read a couple of hours every week. Here is a list of my favorite books:</summary></entry><entry><title type="html">app first, protocol later</title><link href="https://idan-levin.github.io/idanlevin.github.io//app-first-protocol-later.html" rel="alternate" type="text/html" title="app first, protocol later" /><published>2023-01-01T00:00:00+00:00</published><updated>2023-01-01T00:00:00+00:00</updated><id>https://idan-levin.github.io/idanlevin.github.io//%20app%20first,%20protocol%20later</id><content type="html" xml:base="https://idan-levin.github.io/idanlevin.github.io//app-first-protocol-later.html">&lt;h3 id=&quot;tldr&quot;&gt;TL;DR&lt;/h3&gt;
+&lt;p&gt;We can play with the mechanism behind Degen to create a wide design space of external status creation systems. Here are some rough ideas that might be explored:&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;‘app first, protocol later’ is a strategy to bootstrap crypto protocols&lt;/li&gt;
-  &lt;li&gt;The idea is to start from the application layer, gather user feedback, and than advance towards the development of the protocol&lt;/li&gt;
-  &lt;li&gt;This helps creating frequent product iterations, and prevents getting stuck on the protocol meaninglesss work that is not based on user data&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Other content-enhancing coins –&lt;/strong&gt; Can we create an AI coin that gets tipped for excellent AI technical content? Or content about food for the foodies? How granular can we take the idea of content enhancement? Will we have tiny micro status communities in the future for every niche vertical?&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Farcaster clients based on the Degen reputation system&lt;/strong&gt; – create another client that prioritizes Degen holdings when deciding which content to show in the feed. This will be a Degen-first client, where the Degen community can have full control over curation. Should bought Degen receive the same weight as earned Degen?&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Soul bound tipping (non-transferable tipping)&lt;/strong&gt; – tip with coins in a non-transferable way, which could create a long-term social status for the address but also is less speculative and harder to bootstrap.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;“What we call the beginning is often the end. And to make an end is to make a beginning. The end is where we start from.” 
-(T.S. Eliot)&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
 
-&lt;h3 id=&quot;bootstrapping-crypto-networks&quot;&gt;bootstrapping crypto networks&lt;/h3&gt;
+&lt;p&gt;It appears that Degen, although it started as a fun experiment, is a pioneering project in the creation and distribution of social status over the internet.&lt;/p&gt;
 
-&lt;p&gt;One strategy that has gained significant traction in the web3 sphere is ‘app first, protocol later’.&lt;/p&gt;
+&lt;p&gt;With the lightweight tipping system it created, it promotes independence from monolithic platforms and enhances user freedom. Once Farcaster has enabled open state to be read, it created room for creating new types of social status systems on top.&lt;/p&gt;
 
-&lt;p&gt;This strategy revolves around initially focusing on developing a functional application or platform that makes use of an underlying protocol. The protocol itself is then enhanced and expanded later on.&lt;/p&gt;
+&lt;p&gt;There is much more experimentation that should take place in the future around external status creation, and this is just the beginning. If you’re working on something like this, make sure you ping me :)&lt;/p&gt;
 
-&lt;p&gt;What makes this approach effective is that it allows a project to garner feedback and data from the actual use of the application. This information can then be leveraged to refine the protocol, making it more robust and effective. Protocols are highly technical specifications, and it’s often challenging to boost their use without a working application (an exception to this is Ethereum, which started with the protocol, with applications following later).&lt;/p&gt;
+&lt;p&gt;Long live the Degens 🎩&lt;/p&gt;</content><author><name>Idan Levin</name></author><category term="blog_posts" /><summary type="html">In 2019, Eugen Wei published an incredible blog post titled ‘Status-as-a-Service’. He analyzed how social media platforms act as status-generating services, where users perform activities to gain social capital, similar to a video game where status is the score.</summary></entry><entry><title type="html">startup ideation and the quantum state</title><link href="https://idan-levin.github.io/idanlevin.github.io//startup-ideation-and-the-quantum-state.html" rel="alternate" type="text/html" title="startup ideation and the quantum state" /><published>2024-03-21T00:00:00+00:00</published><updated>2024-03-21T00:00:00+00:00</updated><id>https://idan-levin.github.io/idanlevin.github.io//%20Startup%20ideation%20and%20the%20quantum%20state</id><content type="html" xml:base="https://idan-levin.github.io/idanlevin.github.io//startup-ideation-and-the-quantum-state.html">&lt;p&gt;Ideating startup ideas is sort of living in a quantum state. You need to live in the future, being able to see what’s going to happen. But you also need to live in the current state, and see what is missing today.&lt;/p&gt;
 
-&lt;p&gt;I typically break this strategy down into three distinct stages:&lt;/p&gt;
+&lt;p&gt;You always have to live in these two states, which is extremely hard. If you get stuck in one specific state too much, you’re in a problem – if you live too much in the future, you become not practical. You lose focus with the execution plan, and basically just float around in imagination. If you live too much in today, you don’t have a north star.&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Application First&lt;/strong&gt; - At this stage, the primary focus is usually on bootstrapping usage through a user-friendly application. The data collected here acts as the driving force for repeated iterations on the protocol. The protocol at this stage might just be an early version (V1) that will eventually become more advanced.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Protocol Development&lt;/strong&gt; - Once early usage of the application provides enough data to build and start iterating the protocol, the founding team shifts their focus from the application layer to the protocol’s development. At this point, the application has established some form of constant velocity, and the team can concentrate more on growing the protocol and attracting more applications.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Protocol Adoption&lt;/strong&gt; - This stage is often referred to as the protocol’s valley of death and is considered the most challenging part. Here, individual teams begin to build unique applications on top of the protocol. These teams must trust that the protocol is solid and will continue to exist in the future, as they are essentially betting their own applications on its success. No one wants to build on shaky ground. When successful, the protocol expands into a constellation of applications built on top.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;There are a few tricks that you can pull on your mind to balance yourself out between these two states. The trick to be in today’s state is being very active and participating in related activities. If you want to build an onchain commerce protocol on the blockchain, you need to use any commerce platform you can put your hands on. You need to experience this in a highly attentive mode, really sucking in every bit of the onchain commerce experience. You see what are the pain points, and you experience them with your hands. That will keep you grounded to what is real. That will keep you grounded on how many problems exist. That will show you how hard it is to build something meaningful. You will have to ask meaningful questions, like what is the go-to-market strategy? what are the pain points? how do I solve something meaningful tomorrow morning?&lt;/p&gt;
 
-&lt;p&gt;Adopting an ‘application first, protocol later’ approach offers several advantages:&lt;/p&gt;
+&lt;p&gt;Being in the future is different. It is less obvious how to trick yourself into it, and there are fewer out-of-the-box solutions to inspire yourself to see the future. I like to read books and take walks, and when I do these two things enough, I feel myself transcending to the future quantum state. The kind of books I read are about technology or science fiction. I like books by deep thinkers. So in the case of building something onchain, “Read Write Own” by Chris Dixon is an example of a book that can inspire you (although it doesn’t have to necessarily be on the subject you are building in). These books will help you see the big picture and connect it to your story.&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;It allows the project to gather real-world data and feedback from the application users, which can inform the development of the protocol and enhance its effectiveness.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;It can help build a user base and establish a market for the application, laying a foundation for the protocol’s success once it’s launched.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;It enables the project to showcase the potential value and utility of the protocol through the application, attracting developers, investors, and other stakeholders to the project.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;I also like to take long walks or jog. These activities stimulate my brain, and combined with reading deeply, it balances living in the current state and help me transcend to the future state.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/app-first.png&quot; alt=&quot;theme logo&quot; class=&quot;ioda&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;So in summary, you will need to balance yourself in the quantum state of today and the future. Being in today’s state is being active. Being in the future is getting inspiration and letting your mind wander. Combining both is the way to navigate the idea maze.&lt;/p&gt;</content><author><name>Idan Levin</name></author><category term="blog_posts" /><summary type="html">Ideating startup ideas is sort of living in a quantum state. You need to live in the future, being able to see what’s going to happen. But you also need to live in the current state, and see what is missing today.</summary></entry><entry><title type="html">expensive networks are less open source</title><link href="https://idan-levin.github.io/idanlevin.github.io//expensive-networks-are-less-open-source.html" rel="alternate" type="text/html" title="expensive networks are less open source" /><published>2024-03-16T00:00:00+00:00</published><updated>2024-03-16T00:00:00+00:00</updated><id>https://idan-levin.github.io/idanlevin.github.io//%20Expensive%20networks%20are%20less%20open%20source</id><content type="html" xml:base="https://idan-levin.github.io/idanlevin.github.io//expensive-networks-are-less-open-source.html">&lt;p&gt;Linus Torvalds, the creator of Linux, famously said, “Given enough eyeballs, all bugs are shallow.” This quote highlights a key principle of open-source software: the more people who scrutinize a piece of code, the quicker and more effectively bugs and issues are identified and resolved. This concept underpins the open-source movement, which advocates for open access to source code and collaborative development as a path to more reliable and higher-quality software, in contrast to traditional closed-source methods.&lt;/p&gt;
 
-&lt;p&gt;Several crypto projects are currently leveraging this strategy:&lt;/p&gt;
+&lt;p&gt;In the blockchain world, a related concept involves the cost of running a full node. A full node typically means downloading the historical state, verifying it up to the current chain tip, and participating in real-time block reception and validation (not necessarily proposing blocks for network consensus). The cost of running a full node varies across different crypto networks, ranging from a few hundred dollars to millions.&lt;/p&gt;
 
-&lt;h3 id=&quot;farcaster&quot;&gt;Farcaster&lt;/h3&gt;
+&lt;p&gt;The expense isn’t just about hardware and maintenance; it’s also about the complexity of the node software. I believe that the cost of running a full node is generally indicative of a network’s openness or, more specifically, the applicability of Linus’s rule. Low-cost nodes, which are more numerous and accessible, invite diverse participation. In contrast, networks with prohibitively expensive nodes often see participation limited to businesses, while affordable nodes attract hobbyists.&lt;/p&gt;
 
-&lt;p&gt;This project is working towards a sufficiently decentralized social network. Farcaster’s idea is to build a protocol for a social network that anyone can use to build their own client. This means you can build your own social network clients, similar to Twitter, and tap into Farcaster’s existing network. You can build all sorts of clients, in a way that is optimized for different things. Think of Twitter with an open API on top that no one controls or can shut down.&lt;/p&gt;
+&lt;p&gt;Hobbyists are crucial. They tend to be more neutral and openly critical. When the cost to run a node is low, a network is more likely to face scrutiny and attract a broader range of observers. Conversely, in networks where node operation is costly, only businesses with different incentives and motivations tend to participate.&lt;/p&gt;
 
-&lt;p&gt;Currently, Farcaster is in phase 1 of the process, bootstrapping a network that uses the Farcaster app.&lt;/p&gt;
-
-&lt;h3 id=&quot;uniswap&quot;&gt;Uniswap&lt;/h3&gt;
-
-&lt;p&gt;The Uniswap protocol itself is a set of smart contracts on Ethereum and other blockchains, that enable anyone with a wallet to interact with the protocol permissionlessly. The interaction with the protocol might be done throughout the Uniswap ‘official’ app, but there are already many wallets and other applications that have been integrated into the protocol.&lt;/p&gt;
-
-&lt;p&gt;Uniswap started from a single app connected to a protocol, and now it is a constellation of applications, all connected to the protocol and creating a strong network effect of liquidity that is extremely hard to compete with.&lt;/p&gt;
-
-&lt;h3 id=&quot;mirrorxyz&quot;&gt;Mirror.xyz&lt;/h3&gt;
-
-&lt;p&gt;Mirror is a web3 publishing platform that aims to become a protocol for publishing. You can open an account using the web app (the login is wallet based), but once you publish your writings, it’s recorded into Arweave (decentralized storage) in a way that you can always control your publications and restore them through another app in a permissionless way.&lt;/p&gt;
-
-&lt;p&gt;The idea is that the creator controls his work, and can have full control even if the app changes the rules or gets shut down. There are all sorts of different cool features Mirror has embedded within the application (such as crowdfunding with NFTs), but it all eventually trickles down to the protocol layer which is the big oppurtunity.&lt;/p&gt;
-
-&lt;p&gt;Mirror is currently somewhere between phase 1 and 2 - there is usage and adoption for the application layer and more improvements are being met for the protocol layer.&lt;/p&gt;
-
-&lt;h3 id=&quot;conclusion&quot;&gt;conclusion&lt;/h3&gt;
-
-&lt;p&gt;The ‘app first, protocol later’ strategy is anticipated to be a crucial approach for successful crypto projects in the next decade. This strategy consists of three stages: application first, protocol development, and protocol adoption. By employing this method, projects can build strong network effects and pave the way for the protocol’s long-term success. As we move into the next decade of crypto networks, it’s expected that many of the most impactful networks will adopt this strategy, leading to the development of numerous applications based on these protocols.&lt;/p&gt;</content><author><name>Idan Levin</name></author><category term="blog_posts" /><summary type="html">TL;DR</summary></entry><entry><title type="html">what problem network city solves</title><link href="https://idan-levin.github.io/idanlevin.github.io//what-problem-network-city-solves.html" rel="alternate" type="text/html" title="what problem network city solves" /><published>2022-08-20T00:00:00+00:00</published><updated>2022-08-20T00:00:00+00:00</updated><id>https://idan-levin.github.io/idanlevin.github.io//%20What%20problem%20network%20city%20solves</id><content type="html" xml:base="https://idan-levin.github.io/idanlevin.github.io//what-problem-network-city-solves.html">&lt;p&gt;&lt;strong&gt;This blog post is part of the &lt;a href=&quot;https://www.citydao.io/&quot;&gt;CityDAO&lt;/a&gt; contest for offering the best problem that can be solved with network cities.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;The best general use case for network cities is building real life censorship resistance networks.&lt;/p&gt;
-
-&lt;p&gt;I’ll start from a specific example and will than generalize the idea.&lt;/p&gt;
-
-&lt;p&gt;Law of Return as censorship resistant mechanism
-Israel, the place I live in, is probably the first network state in the world. It was formed in 1948 after World War II and the Holocaust, when Jews were prosecuted based on their ethnicity and believes. This has pushed Jews to seek for their own sovereign state. In 1950, after Israel was born, the Law of Return was passed, which gave Jews all over the world, at any given time, the right to receive an Israeli citizenship and return to Israel.&lt;/p&gt;
-
-&lt;p&gt;(This rule was subject to major debate as it discriminates against other citizens of Israel like Arabs and Druze, but I will ignore this point as it ignites a big, different debate).&lt;/p&gt;
-
-&lt;p&gt;The Law of Return created a censorship resistant network for Jews that lives until today - if you’re a Jew currently living in country X, and being prosecuted for it, you can always use the Law of Return to come back to Israel.&lt;/p&gt;
-
-&lt;p&gt;This law was used excessively and is still being used until today (for example many French Jews returned to Israel in the past 20 years).&lt;/p&gt;
-
-&lt;p&gt;The Law of Return created a censorship resistant network for Jews around the world. It is anchored with physical land in Israel, but also uses a distributed population hubs of Jews around the world that helps other Jews. We’ve created a censorship resistant network, based on the fact that history tried to censor us.&lt;/p&gt;
-
-&lt;p&gt;Network cities as censorship resistant entities
-We can take this real life censorship resistant property and generalize it to other areas other than religion.&lt;/p&gt;
-
-&lt;p&gt;Just recently, abortions were banned in at least 10 states in the US. What if we can create a network city that is based on the idea that abortions are legitimate and are a given right?&lt;/p&gt;
-
-&lt;p&gt;This network can become a virtual entity that serves as a insurance policy to every woman that might get censored and is fearful (censorship in the sense that some woman want to have an abortion but she can’t). Just like the Rule of Return, the network city citizenship will provide her with an exit card - to exit her censoring society and move somewhere else.&lt;/p&gt;
-
-&lt;p&gt;We can generalize the idea of the network city around any set of values that certain communities have (where the community values is currently a subset in one or many nation states), but might some day be a subject to extreme censorship based on its values. Minority communities are a great first example.&lt;/p&gt;
-
-&lt;p&gt;Network cities can be fully virtual with no physical land backing, or can have one hub of physical backing with distributed citizens set (like Israel). This models will enable people to keep their set of believes and values, whilst having an insurance, or some kind of exit plan in case they gets censored.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/Network-city-1.png&quot; alt=&quot;theme logo&quot; class=&quot;ioda&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/network-city-2.png&quot; alt=&quot;2&quot; class=&quot;ioda&quot; /&gt;&lt;/p&gt;</content><author><name>Idan Levin</name></author><category term="blog_posts" /><summary type="html">This blog post is part of the CityDAO contest for offering the best problem that can be solved with network cities.</summary></entry><entry><title type="html">The toys will be tokenized first</title><link href="https://idan-levin.github.io/idanlevin.github.io//the-toys-will-be-tokenized-first.html" rel="alternate" type="text/html" title="The toys will be tokenized first" /><published>2022-07-31T00:00:00+00:00</published><updated>2022-07-31T00:00:00+00:00</updated><id>https://idan-levin.github.io/idanlevin.github.io//the%20toys%20will%20be%20tokenized%20first</id><content type="html" xml:base="https://idan-levin.github.io/idanlevin.github.io//the-toys-will-be-tokenized-first.html">&lt;h3 id=&quot;tldr&quot;&gt;TL;DR&lt;/h3&gt;
+&lt;p&gt;This situation has two primary effects:&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Everyone loves toys&lt;/li&gt;
-  &lt;li&gt;Toys are easy to tokenize, because (i) they don’t hold legal fees and potential legal liabilites (ii) no one expects nothing from them other than to have fun&lt;/li&gt;
-  &lt;li&gt;Conclusion: the toys will be tokenized first&lt;/li&gt;
+  &lt;li&gt;Bugs in network architecture take longer to be discovered.&lt;/li&gt;
+  &lt;li&gt;The network may accumulate unaddressed risks over time.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;“the next big thing will start looking like a toy” 
-(Chris Dixon)&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;The latter point relates to a lack of incentive for whistleblowing; the former, to the simple law of large numbers.&lt;/p&gt;
 
-&lt;h3 id=&quot;the-tokenization-of-everything&quot;&gt;“the tokenization of everything”&lt;/h3&gt;
+&lt;p&gt;Consequently, I’m more cautious about networks with high participation costs. They require more time to prove their robustness, and they carry a higher risk of accumulating systemic issues. While high-cost networks can still function, when it comes to the robustness stemming from open-source development, I tend to trust architectures derived from networks with lower participation costs.&lt;/p&gt;</content><author><name>Idan Levin</name></author><category term="blog_posts" /><summary type="html">Linus Torvalds, the creator of Linux, famously said, “Given enough eyeballs, all bugs are shallow.” This quote highlights a key principle of open-source software: the more people who scrutinize a piece of code, the quicker and more effectively bugs and issues are identified and resolved. This concept underpins the open-source movement, which advocates for open access to source code and collaborative development as a path to more reliable and higher-quality software, in contrast to traditional closed-source methods.</summary></entry><entry><title type="html">chinese whispers, trust entropy, and why blockchains matter</title><link href="https://idan-levin.github.io/idanlevin.github.io//chinese-whispers-trust-entropy-and-why-blockchains-matter.html" rel="alternate" type="text/html" title="chinese whispers, trust entropy, and why blockchains matter" /><published>2024-02-09T00:00:00+00:00</published><updated>2024-02-09T00:00:00+00:00</updated><id>https://idan-levin.github.io/idanlevin.github.io//%20Chinese%20Whispers,%20Trust%20Entropy,%20and%20Why%20Blockchains%20Matter</id><content type="html" xml:base="https://idan-levin.github.io/idanlevin.github.io//chinese-whispers-trust-entropy-and-why-blockchains-matter.html">&lt;p&gt;“Chinese Whispers,” also known as “Broken Telephone,” is a popular children’s game that demonstrates how easily information can become distorted when passed through a series of individuals. The game typically involves participants sitting in a circle or a line. The first person thinks of a message and whispers it to the next person, who then passes it on. As the message travels, it often becomes garbled and significantly changes from the original. The final version, announced by the last person, is usually very different from the initial one, and in some cases unrecognizable.&lt;/p&gt;
 
-&lt;p&gt;The concept of the tokenization of everything was a prevalent thesis in crypto during 2017/18. Yet, during the last crypto cycle of 2021, this term wasn’t mentioned as much.&lt;/p&gt;
+&lt;p&gt;This game illustrates “information entropy,” a concept from mathematics and information theory coined by Claude Shannon in his 1948 paper “A Mathematical Theory of Communication.” Information entropy measures the unpredictability in a set of outcomes. In Broken Telephone, each whisper introduces potential errors, increasing the entropy and distorting the original message. This process is akin to a compounding error rate, where noise increases with each transfer, eventually resulting in significant information loss.&lt;/p&gt;
 
-&lt;p&gt;This thesis broadly posits that in the same way the internet shifted the world from being offline to online, blockchains will transform the world from being off-chain to on-chain. In practical terms, this indicates we should see the tokenization of real-world assets. Assets like real estate, stocks, bonds, and any physical asset could gain digital representations on blockchains as tokens. I aim to explain why this thesis hasn’t fully materialized yet, and how I envision it most likely playing out in the coming years.&lt;/p&gt;
+&lt;p&gt;But what does information entropy have to do with blockchains? Blockchains deal with trust (or, trustlessness), and if you’ll think about it hard enough, you will recognize a close relationship between how information and trust behave.&lt;/p&gt;
 
-&lt;p&gt;The concept of tokenizing everything does make a lot of sense. Using blockchains like Ethereum, one can have 24/7, permissionless global markets that are composable and standardized. They’re open to everyone worldwide, maintaining neutrality without ownership by any specific nation state. This represents the most compelling embodiment of the globalization vision - global neutral markets serving everyone.&lt;/p&gt;
+&lt;h2 id=&quot;trust-and-society&quot;&gt;Trust and society&lt;/h2&gt;
 
-&lt;p&gt;Over the past two years, DeFi protocols have demonstrated that we can construct financial primitives we know from traditional finance on blockchains, such as exchanges, swaps, borrowing and lending markets, and derivatives.&lt;/p&gt;
+&lt;p&gt;Trust is fundamental in society. It’s the confidence in the reliability and integrity of a person or system. We trust our cars, elevators, airplane manufacturers, and food producers. We trust societal rules to protect us from crime.&lt;/p&gt;
 
-&lt;p&gt;We’ve seen they can operate at scale without breaking down, even under extraordinarily high usage and adverse conditions. They provide a robust system for tracking valuable assets. For instance, Ethereum settled $11.6 trillion in 2021, more than Visa.&lt;/p&gt;
+&lt;p&gt;Trust is essential, but it’s also complex. Trusting someone or a system is a consequence of complex processes each of us is doing when underwriting our trust in another person or system. Humans also frequently use a ‘delegation algorithm’ – if others trust something, we’re more likely to trust it too. The majority of things we trust in our day-to-day is a consequence of trust delegation, we actually verify very little things by ourselves in modern society (if you would try to, you probably won’t have too much spare time to do anything rather verifying all day long).&lt;/p&gt;
 
-&lt;p&gt;This vision for the tokenization of everything is undeniably captivating. Yet, if I’m being pragmatic, we’re not yet seeing many signs of this occurring. Currently, the only tokenized asset at scale is probably backed stable coins, with assets like USDC. USDC, a tokenized dollar, is operated by the company Circle. They lock dollars in a bank account and create a 1:1 token representation of a dollar on the blockchain called USDC. Right now, approximately $55 billion dollars of tokenized USDC dollars exist, alongside others such as Tether. But that’s about it. No other real-world assets are tokenized at scale.&lt;/p&gt;
+&lt;p&gt;Trust is everywhere, and society can’t function without it. A mental model that I like for trust, can be thought of as a &lt;strong&gt;chain of components, each its own piece of trust&lt;/strong&gt;. In airplane manufacturing for example, this chain extends across various parties - manufacturers trust vendors to meet quality and safety standards. Airlines trust engineers and designers. Regulatory bodies develop safety standards, and passengers trust these authorities for aircraft safety. Trust also extends to airline staff, from pilots to maintenance crews.&lt;/p&gt;
 
-&lt;p&gt;So why hasn’t this thesis fully materialized yet? Let’s explore why, starting with an example.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/entropy1.png&quot; alt=&quot;1&quot; class=&quot;ioda&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;If someone wishes to tokenize a real-world asset, say a building they own in Tel Aviv, they’d want to create a digital token that represents ownership in that building. The token should be transferable and compatible with any DeFi tool like decentralized exchanges. Perhaps you’d want to use this token as collateral and borrow against it. Hence, it should be compatible with DeFi tooling.&lt;/p&gt;
+&lt;h2 id=&quot;trust-and-information&quot;&gt;Trust and information&lt;/h2&gt;
 
-&lt;p&gt;This person faces two primary challenges:&lt;/p&gt;
+&lt;p&gt;I’ve been playing with the idea that &lt;strong&gt;trust is a derivative of information, sharing similar properties&lt;/strong&gt; for quite some time now. In a trust chain, each node ‘passes’ trust to the next one. However, like in Chinese Whispers, there’s trust erosion with each transfer. A ‘loss factor’ or ‘error rate’ accumulates in the network. Because of that, longer trust chains based on pure human interaction get’s weaker with size. This is an intuitive conclusion if you think of your daily life - It’s easier to verify close interactions than distant ones.
+For instance, consider the trust you place in a local restaurant versus a distant food manufacturer:&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;High legal friction and costs&lt;/strong&gt;: Ownership of real estate is managed locally by nation states via somewhat isolated databases of property ownership, each with its unique set of rules. If I own a building in Tel Aviv, there’s a record with my name in the database of the Israeli Land Authority stating my ownership. To transfer this building, I need to comply with their rule set. They might require the asset transferee to be an Israeli citizen or undergo a complicated KYC process, among other rules. If I want to tokenize real-world assets, I inherit the properties and rules that these assets comply with. Therefore, I need the original rule set owner’s consent for a digital blockchain transfer to be acknowledged as a valid transfer. Even if authorities were open to the tokenization of real-world assets, which is generally not the case due to lack of understanding of blockchain systems, the process would be costly and set a high threshold for asset tokenization.&lt;/p&gt;
+&lt;h3 id=&quot;trusting-a-local-restaurant&quot;&gt;Trusting a local restaurant:&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Personal Experience&lt;/strong&gt;: You’ve eaten at this restaurant many times and consistently found the food to be delicious and high-quality. You might have met the owners and know who they are.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Direct Observation&lt;/strong&gt;: You’ve witnessed the restaurant’s cleanliness and the staff’s meticulous care in food preparation and service.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Immediate Feedback&lt;/strong&gt;: The restaurant addresses any concerns or special requests right away, enhancing your trust in their service.&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;p&gt;&lt;strong&gt;Lack of users&lt;/strong&gt;: Even after overcoming legal costs and friction, the next hurdle is the lack of users. Few people want to invest in real estate on the blockchain. Traditional real estate investors generally don’t grasp the concept, often finding it odd and unclear.&lt;/p&gt;
+&lt;p&gt;In this scenario, your trust in the restaurant is based on direct, repeated, and personal experiences. It’s straightforward to verify because your interactions with the restaurant and its staff are regular and direct.&lt;/p&gt;
 
-&lt;p&gt;This creates a classic chicken and egg problem. The vision of tokenization is compelling, but factoring in the legal costs and lack of users, how exactly do we practically transition to tokenizing everything? How do we progress from point A to point B?&lt;/p&gt;
+&lt;h3 id=&quot;trusting-a-distant-food-manufacturer&quot;&gt;Trusting a distant food manufacturer:&lt;/h3&gt;
 
-&lt;p&gt;I believe there’s a way this could unfold, and I want to share a mental model to help envision how this can happen. I’ll use two examples: Unisocks and a startup called Blockbar.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Lack of Personal Experience&lt;/strong&gt;: You’ve never visited the manufacturing facility, so you have no firsthand experience with the manufacturer’s processes. You have no clue who are the shareholders of the company.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;No Direct Observation&lt;/strong&gt;: You’re unable to see the product’s creation, the working conditions, or the quality control measures firsthand.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Delayed or Limited Feedback&lt;/strong&gt;: Any issues you have with the product can only be addressed through customer service, which might be slow to respond or just not veru personal.&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;h3 id=&quot;unisocks&quot;&gt;Unisocks&lt;/h3&gt;
+&lt;p&gt;In this case, verifying the food manufacturer is much more challenging. You might rely on reviews, brand reputation, or certifications, but these are indirect ways of establishing trust. The physical and experiential distance introduces more variables and uncertainties, complicating the establishment of trust compared to the local restaurant scenario. I call this concept Trust Entropy.&lt;/p&gt;
 
-&lt;p&gt;In 2019, Uniswap, currently the largest decentralized exchange, created 500 SOCKS tokens. The idea was that these tokens were “backed” by an equal number of physical, limited-edition pairs of socks. Unisock holders could convert their tokens into socks by redeeming them, effectively taking them out of circulation. Unisocks was a great success, trading at a peak of over $150 thousand per pair of socks, and generating millions in trading volume.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/entropy2.png&quot; alt=&quot;1&quot; class=&quot;ioda&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;This was undoubtedly taken to an extreme with speculation, but I see no regulator chasing after tokenized sock creators. Hence, we have a perfect example of a tokenized digital artifact, free from legal costs, with speculation bootstrapping demand.&lt;/p&gt;
+&lt;h2 id=&quot;trust-entropy-increases-with-the-size-of-collaborating-humans&quot;&gt;Trust Entropy increases with the size of collaborating humans&lt;/h2&gt;
 
-&lt;h3 id=&quot;blockbar&quot;&gt;Blockbar&lt;/h3&gt;
+&lt;p&gt;Yuval Noah Harari, in his book “Sapiens,” explains how humans scaled from small groups to nation-states using mechanisms like mass communication and shared culture. We’ve gotten a long way from painting stories on the cave wall – we can use mass communications like radio, TV, and the internet, to spread ideas and information across the world in the speed of light.
+However, it seems like modern society faces a ‘trust barrier.’ With more information comes more fake news, more conspiracies, and more information warfare. It seems like at some point, trust is eroding.  It is no coincidence that public trust in governments is reaching historical lows.&lt;/p&gt;
 
-&lt;p&gt;Blockbar is a startup that lets you purchase tokenized, high-end spirit bottles. They auction rare bottles such as 1973 Glenfiddich single malt scotch whisky, providing a redeemable NFT as a claim on the actual bottle. The NFT is fully backed, while the physical bottle is securely stored on their premises.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/entropy3.png&quot; alt=&quot;1&quot; class=&quot;ioda&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Blockbar collaborates with well-known brands like Glenfiddich, Hennessy, and Johnnie Walker. Tokenizing spirits is another excellent example of something regulators like the SEC don’t care about, and that people enjoy speculating with.&lt;/p&gt;
+&lt;p&gt;Source&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
-&lt;p&gt;What I am attempting to convey is that we should start with tokenizing things that are easy to tokenize—the low-hanging fruit of tokenization.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Beyond a certain point, trust doesn’t scale with current technology&lt;/strong&gt;. The internet has brought us information efficiency, but it cannot scale trust by itself. Human collaboration is hindered by significant entropy in the trust chain, evident in societal distrust, from vaccine scepticism to conspiracy theories.&lt;/p&gt;
 
-&lt;p&gt;Things that are easy to tokenize are those that regulators like the SEC don’t care about. These are items with no legal costs or friction associated with their tokenization; they’re toys in the eyes of regulators.&lt;/p&gt;
+&lt;h2 id=&quot;dont-trust-verify&quot;&gt;‘Don’t trust, verify’&lt;/h2&gt;
 
-&lt;p&gt;Chris Dixon has a famous quote: “the next big thing will start looking like a toy”. This concept will be taken to the extreme in cases like Unisocks.&lt;/p&gt;
+&lt;p&gt;‘Don’t trust, verify’ is a phrase often heard in blockchain contexts. Public blockchains like Bitcoin and Ethereum allow users to verify the network state (e.g., Bitcoin holdings) independently by running their own nodes, reducing reliance on third parties, and shortening the trust chain.&lt;/p&gt;
 
-&lt;p&gt;When you tokenize toys, you overcome the problems of tokenization - no legal friction or costs - and you can bootstrap demand with speculation. Speculation for toys is easy, simple, and doesn’t require investors to adopt your technology. People will participate because it’s fun.&lt;/p&gt;
+&lt;p&gt;However, using Bitcoin still involves trust in hardware manufacturers and internet providers, among other things. Blockchain technology requires less trust than traditional systems and shortens the trust chain (but doesn’t eliminate it entirely, which is a common mistake maximalist do). Open-source smart contracts on Ethereum let users verify contracts logic directly. These contracts can replace many trust-dependent societal functions, allowing for shorter trust chains in international settlements, and collaboration across the internet with very low trust barriers.&lt;/p&gt;
 
-&lt;p&gt;Adoption in crypto doesn’t start with the obvious use cases. It begins with the sidelines and speculation, then creates a rapid feedback loop, generating demand for tooling, which in turn creates more use cases and attracts more users.&lt;/p&gt;
+&lt;h2 id=&quot;why-blockchains&quot;&gt;Why Blockchains&lt;/h2&gt;
 
-&lt;p&gt;At a later stage, this will enable real estate to enter the blockchain.&lt;/p&gt;
+&lt;p&gt;Blockchains provide a verifiable database and logic, creating coordination systems that require far less trust than current mechanisms (I really like Chris Dixon definition: “blockchains are computers that can make commitments”. This is another way of describing trust machines, because commitments = trust enabler). The internet scaled information transfer globally, but the trust component is still lacking. Blockchains matter because they fill this gap. Enhancing trust chains with math and cryptography avoids the errors of human trust transmission, as seen in Chinese Whispers. 
+The idea is that humans don’t have to build these long trust chains, that gets eroded through time. You can use blockchains to reduce the length of these chains or make them more robust. More verifiability means more trust, and more trust means more collaboration.&lt;/p&gt;
 
-&lt;p&gt;Adoption starts from things like Unisocks and whisky bottles and culminates with real estate and other real-world assets.&lt;/p&gt;
-
-&lt;p&gt;Obvious use cases are trading cards, collectibles, spirit bottles, expensive watches, and potentially cars at a later stage. The more toys get tokenized, the more infrastructure will be built, and the more users will adopt the core tech.&lt;/p&gt;
-
-&lt;p&gt;I believe we will see a lot of real-world assets get tokenized in the next few years - but they won’t be real estate or traditional assets with complex legal structures embedded in them.&lt;/p&gt;
-
-&lt;p&gt;The toys will be tokenized first.&lt;/p&gt;</content><author><name>Idan Levin</name></author><category term="blog_posts" /><summary type="html">TL;DR</summary></entry><entry><title type="html">Post Example With Headings And Toc</title><link href="https://idan-levin.github.io/idanlevin.github.io//post-example-with-headings-and-toc.html" rel="alternate" type="text/html" title="Post Example With Headings And Toc" /><published>2020-07-09T00:00:00+00:00</published><updated>2020-07-09T00:00:00+00:00</updated><id>https://idan-levin.github.io/idanlevin.github.io//post-example-with-headings-and-toc</id><content type="html" xml:base="https://idan-levin.github.io/idanlevin.github.io//post-example-with-headings-and-toc.html">&lt;p&gt;Mauris viverra dictum ultricies. Vestibulum quis ipsum euismod, facilisis metus sed, varius ipsum. Donec scelerisque lacus libero, eu dignissim sem venenatis at. Nunc a egestas tortor, sed feugiat leo.&lt;/p&gt;
-
-&lt;h2 id=&quot;table-of-contents&quot;&gt;Table of contents&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;#table-of-contents&quot;&gt;Table of contents&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#the-start&quot;&gt;The start&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#the-middle&quot;&gt;The middle&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#the-end&quot;&gt;The end&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Mauris viverra dictum ultricies. Vestibulum quis ipsum euismod, facilisis metus sed, varius ipsum. Donec scelerisque lacus libero, eu dignissim sem venenatis at. Nunc a egestas tortor, sed feugiat leo. Vestibulum porta tincidunt tellus, vitae ornare tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed nunc neque, tempor in iaculis non, faucibus et metus. Etiam id nisl ut lorem gravida euismod.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-start&quot;&gt;&lt;a href=&quot;#the-start&quot;&gt;The start&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;Fusce non velit cursus ligula mattis convallis vel at metus. Sed pharetra tellus massa, non elementum eros vulputate non. Suspendisse potenti. Quisque arcu felis, laoreet vel accumsan sit amet, fermentum at nunc. Sed massa quam, auctor in eros quis, porttitor tincidunt orci. Nulla convallis id sapien ornare viverra. Cras nec est lacinia ligula porta tincidunt. Nam a est eget ligula pellentesque posuere. Maecenas quis enim ac risus accumsan scelerisque. Aliquam vitae libero sapien. Etiam convallis, metus nec suscipit condimentum, quam massa congue velit, sit amet sollicitudin nisi tortor a lectus. Cras a arcu enim. Suspendisse hendrerit euismod est ac gravida. Donec vitae elit tristique, suscipit eros at, aliquam augue. In ac faucibus dui. Sed tempor lacus tristique elit sagittis, vitae tempor massa convallis.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-middle&quot;&gt;&lt;a href=&quot;#the-middle&quot;&gt;The middle&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;Proin quis velit et eros auctor laoreet. Aenean eget nibh odio. Suspendisse mollis enim pretium, fermentum urna vitae, egestas purus. Donec convallis tincidunt purus, scelerisque fermentum eros sagittis vel. Aliquam ac aliquet risus, tempus iaculis est. Fusce molestie mauris non interdum hendrerit. Curabitur ullamcorper, eros vitae interdum volutpat, lacus magna lacinia turpis, at accumsan dui tortor vel lectus. Aenean risus massa, semper non lectus rutrum, facilisis imperdiet mi. Praesent sed quam quis purus auctor ornare et sed augue. Vestibulum non quam quis ligula luctus placerat sed sit amet erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce auctor, sem eu volutpat dignissim, turpis nibh malesuada arcu, in consequat elit mauris quis sem. Nam tristique sit amet enim vel accumsan. Sed id nibh commodo, dictum sem id, semper quam.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-end&quot;&gt;The end&lt;/h2&gt;
-
-&lt;p&gt;Donec ex lectus, tempus non lacinia quis, pretium non ipsum. Praesent est nunc, rutrum vel tellus eu, tristique laoreet purus. In rutrum orci sit amet ex ornare, sit amet finibus lacus laoreet. Etiam ac facilisis purus, eget porttitor odio. Suspendisse tempus dolor nec risus sodales posuere. Proin dui dui, mollis a consectetur molestie, lobortis vitae tellus. Vivamus at purus sed urna sollicitudin mattis. Mauris lacinia libero in lobortis pulvinar. Nullam sit amet condimentum justo. Donec orci justo, pharetra ut dolor non, interdum finibus orci. Proin vitae ante a dui sodales commodo ac id elit. Nunc vel accumsan nunc, sit amet congue nunc. Aliquam in lacinia velit. Integer lobortis luctus eros, in fermentum metus aliquet a. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.&lt;/p&gt;</content><author><name>Idan Levin</name></author><category term="example2" /><summary type="html">Mauris viverra dictum ultricies. Vestibulum quis ipsum euismod, facilisis metus sed, varius ipsum. Donec scelerisque lacus libero, eu dignissim sem venenatis at. Nunc a egestas tortor, sed feugiat leo.</summary></entry><entry><title type="html">Post Example With Hr</title><link href="https://idan-levin.github.io/idanlevin.github.io//hr-example.html" rel="alternate" type="text/html" title="Post Example With Hr" /><published>2020-07-09T00:00:00+00:00</published><updated>2020-07-09T00:00:00+00:00</updated><id>https://idan-levin.github.io/idanlevin.github.io//hr%20example</id><content type="html" xml:base="https://idan-levin.github.io/idanlevin.github.io//hr-example.html">&lt;p&gt;Lorem ipsum&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; dolor sit amet, consectetur adipiscing elit. Pellentesque vel lacinia neque. Praesent nulla quam, ullamcorper in sollicitudin ac, molestie sed justo. Cras aliquam, sapien id consectetur accumsan, augue magna faucibus ex, ut ultricies turpis tortor vel ante. In at rutrum tellus. Nullam vestibulum metus eu purus malesuada, volutpat mattis leo facilisis. Sed consectetur, nisl et semper laoreet, velit augue congue nunc, eget eleifend odio erat eu sapien. Phasellus dictum efficitur dapibus. Morbi porta lacinia tincidunt. Nam aliquet est mi, nec lacinia ipsum elementum sed. Nam feugiat ipsum tortor, et pretium purus sollicitudin et.&lt;/p&gt;
+&lt;p&gt;This is why I believe the blockchain is one of the greatest inventions of this century – it will enable us to collaborate on a whole new scale. The fight against trust entropy is here. We need blockchains to win.&lt;/p&gt;
 
 &lt;hr /&gt;
-
-&lt;p&gt;Mauris viverra dictum ultricies&lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;. Vestibulum&lt;sup id=&quot;fnref:3&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; quis ipsum euismod, facilisis metus sed, varius ipsum. Donec scelerisque lacus libero, eu dignissim sem venenatis at. Nunc a egestas tortor, sed feugiat leo. Vestibulum porta tincidunt tellus, vitae ornare tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed nunc neque, tempor in iaculis non, faucibus et metus. Etiam id nisl ut lorem gravida euismod.&lt;/p&gt;
-
-&lt;p&gt;Fusce non velit cursus ligula mattis convallis vel at metus. Sed pharetra tellus massa, non elementum eros vulputate non. Suspendisse potenti. Quisque arcu felis, laoreet vel accumsan sit amet, fermentum at nunc. Sed massa quam, auctor in eros quis, porttitor tincidunt orci. Nulla convallis id sapien ornare viverra. Cras nec est lacinia ligula porta tincidunt. Nam a est eget ligula pellentesque posuere. Maecenas quis enim ac risus accumsan scelerisque. Aliquam vitae libero sapien. Etiam convallis, metus nec suscipit condimentum, quam massa congue velit, sit amet sollicitudin nisi tortor a lectus. Cras a arcu enim. Suspendisse hendrerit euismod est ac gravida. Donec vitae elit tristique, suscipit eros at, aliquam augue. In ac faucibus dui. Sed tempor lacus tristique elit sagittis, vitae tempor massa convallis.&lt;/p&gt;
-
-&lt;hr data-content=&quot;discussions&quot; /&gt;
-
-&lt;p&gt;This article has been discussed here:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;lobste.rs&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;/r/webdev&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Feel free to reach out at my email to leave feedback and talk about the article.&lt;/p&gt;
-
-&lt;hr data-content=&quot;footnotes&quot; /&gt;
 
 &lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;Okay here I should put something about “ipsum”. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:2&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;same goes for this. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:3&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;I studied latin in high school but im not able to translate &lt;em&gt;anything&lt;/em&gt;! By the way this is a longer footnote and i think it is still pretty cool, even prettier than shortier ones even though it does not say anything useful but whatever. &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;Source: https://www.pewresearch.org/politics/2023/09/19/public-trust-in-government-1958-2023/ &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Idan Levin</name></author><summary type="html">Lorem ipsum1 dolor sit amet, consectetur adipiscing elit. Pellentesque vel lacinia neque. Praesent nulla quam, ullamcorper in sollicitudin ac, molestie sed justo. Cras aliquam, sapien id consectetur accumsan, augue magna faucibus ex, ut ultricies turpis tortor vel ante. In at rutrum tellus. Nullam vestibulum metus eu purus malesuada, volutpat mattis leo facilisis. Sed consectetur, nisl et semper laoreet, velit augue congue nunc, eget eleifend odio erat eu sapien. Phasellus dictum efficitur dapibus. Morbi porta lacinia tincidunt. Nam aliquet est mi, nec lacinia ipsum elementum sed. Nam feugiat ipsum tortor, et pretium purus sollicitudin et. Okay here I should put something about “ipsum”. &amp;#8617;</summary></entry><entry><title type="html">Language Tests</title><link href="https://idan-levin.github.io/idanlevin.github.io//language-tests.html" rel="alternate" type="text/html" title="Language Tests" /><published>2020-07-08T00:00:00+00:00</published><updated>2020-07-08T00:00:00+00:00</updated><id>https://idan-levin.github.io/idanlevin.github.io//language-tests</id><content type="html" xml:base="https://idan-levin.github.io/idanlevin.github.io//language-tests.html">&lt;p&gt;Note: I took this test post from &lt;a href=&quot;https://github.com/huangyz0918/moving&quot;&gt;moving&lt;/a&gt;, which is another Jekyll theme which is better that this one so I should not have linked it because now you will decide to use it instead of mine.&lt;/p&gt;
+&lt;/div&gt;</content><author><name>Idan Levin</name></author><category term="blog_posts" /><summary type="html">“Chinese Whispers,” also known as “Broken Telephone,” is a popular children’s game that demonstrates how easily information can become distorted when passed through a series of individuals. The game typically involves participants sitting in a circle or a line. The first person thinks of a message and whispers it to the next person, who then passes it on. As the message travels, it often becomes garbled and significantly changes from the original. The final version, announced by the last person, is usually very different from the initial one, and in some cases unrecognizable.</summary></entry><entry><title type="html">why prediction markets don&amp;#8217;t work</title><link href="https://idan-levin.github.io/idanlevin.github.io//why-prediction-markets-don-t-work.html" rel="alternate" type="text/html" title="why prediction markets don&amp;#8217;t work" /><published>2024-01-04T00:00:00+00:00</published><updated>2024-01-04T00:00:00+00:00</updated><id>https://idan-levin.github.io/idanlevin.github.io//%20why%20prediction%20markets%20don't%20work</id><content type="html" xml:base="https://idan-levin.github.io/idanlevin.github.io//why-prediction-markets-don-t-work.html">&lt;p&gt;The discussion on Crypto Twitter about why prediction markets don’t work really captures the essence of the expectations gap between crypto core enthusiasts/leaders and the users (“the people”).&lt;/p&gt;
 
-&lt;h3 id=&quot;1-日本語テスト&quot;&gt;1. 日本語テスト&lt;/h3&gt;
+&lt;p&gt;Crypto enthusiasts love the idea of prediction markets and the information efficiency they can bring to the world when done on an internet scale (&lt;a href=&quot;https://decrypt.co/47178/vitalik-buterin-crypto-prediction-markets-outperformed-forecasts&quot;&gt;Vitalik’s take’&lt;/a&gt;).&lt;/p&gt;
 
-&lt;p&gt;This is a Japanese test post to show you how japanese is displayed.&lt;/p&gt;
+&lt;p&gt;Yet, they seem to overlook that, at the moment, prediction markets are - (drum roll)&lt;/p&gt;
 
-&lt;p&gt;私は昨日ついにその助力家というのの上よりするたなけれ。
-最も今をお話団はちょうどこの前後なかろでくらいに困りがいるたをは帰着考えたなかって、そうにもするでうたらない。
-がたを知っないはずも同時に九月をいよいよたありた。&lt;/p&gt;
+&lt;p&gt;not fun.&lt;/p&gt;
 
-&lt;p&gt;もっと槙さんにぼんやり金少し説明にえた自分大した人私か影響にというお関係たうませないが、この次第も私か兄具合に使うて、槙さんののに当人のあなたにさぞご意味と行くて私個人が小尊敬を聴いように同時に同反抗に集っだうて、いよいよまず相当へあっうからいだ事をしでなけれ。&lt;/p&gt;
+&lt;p&gt;We can label it differently (UX, etc.), but the truth is they’re just not as much fun right now. or perhaps it’s better said - they’re much less fun compared to other crypto activities.&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;それでそれでもご時日をしはずはたったいやと突き抜けるますて、その元がは行ったてという獄を尽すていけですた。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;For example:&lt;/p&gt;
 
-&lt;p&gt;この中道具の日その学校はあなたごろがすまなりかとネルソンさんの考えるですん、辺の事実ないというご盲従ありたですと、爺さんのためが薬缶が結果までの箸の当時してならて、多少の十月にためからそういう上からとにかくしましないと触れべきものたで、ないうですと多少お人達したのでたた。&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;betting on hamster races on telegram - really fun&lt;/li&gt;
+  &lt;li&gt;swapping meme coins on uniswap - really fun&lt;/li&gt;
+  &lt;li&gt;flipping jpegs on blur - really fun&lt;/li&gt;
+  &lt;li&gt;betting on who will be the next president of Argentina - much less fun. maybe around 10%-15% fun level of the above activities.&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;From &lt;a href=&quot;http://lipsum.sugutsukaeru.jp/index.cgi&quot;&gt;すぐ使えるダミーテキスト - 日本語 Lorem ipsum.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In terms of contribution to the efficiency of society:&lt;/p&gt;
 
-&lt;h3 id=&quot;2-繁体中文测试&quot;&gt;2. 繁体中文测试&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;betting on hamster races on telegram - zero contribution&lt;/li&gt;
+  &lt;li&gt;swapping meme coins on uniswap - zero contribution&lt;/li&gt;
+  &lt;li&gt;flipping jpegs on blur - zero contribution&lt;/li&gt;
+  &lt;li&gt;betting on the next president of Argentina - significant contribution to information efficiency&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;This is a chinese test post to show you how chinese is displayed.&lt;/p&gt;
+&lt;p&gt;We need to bring the fun level of prediction markets closer to other activities. then, we’ll reach the ‘changing the world’ zone - lots of fun and significant contribution.&lt;/p&gt;
 
-&lt;p&gt;善我王上魚、產生資西員合兒臉趣論。畫衣生這著爸毛親可時，安程幾？合學作。觀經而作建。都非子作這！法如言子你關！手師也。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/fun_zone.png&quot; alt=&quot;1&quot; class=&quot;ioda&quot; /&gt;&lt;/p&gt;</content><author><name>Idan Levin</name></author><category term="blog_posts" /><summary type="html">The discussion on Crypto Twitter about why prediction markets don’t work really captures the essence of the expectations gap between crypto core enthusiasts/leaders and the users (“the people”).</summary></entry><entry><title type="html">modular vs. monolithic</title><link href="https://idan-levin.github.io/idanlevin.github.io//modular-vs-monolithic.html" rel="alternate" type="text/html" title="modular vs. monolithic" /><published>2023-12-25T00:00:00+00:00</published><updated>2023-12-25T00:00:00+00:00</updated><id>https://idan-levin.github.io/idanlevin.github.io//%20modular%20vs.%20monolithic</id><content type="html" xml:base="https://idan-levin.github.io/idanlevin.github.io//modular-vs-monolithic.html">&lt;p&gt;The 2023 price rally in Solana has ignited a fiery ‘geeky’ discussion on X between developer communities regarding different blockchain architectures.
+It is quite common to watch tribes of developers and investors in crypto land fighting over what is the best/right tech, and ‘modular vs. monolithic’ is the current hot discussion.&lt;/p&gt;
 
-&lt;p&gt;以也座論頭室業放。要車時地變此親不老高小是統習直麼調未，行年香一？&lt;/p&gt;
+&lt;p&gt;So, it is worthwhile explaining what modular and monolithic are, and why it matters:&lt;/p&gt;
 
-&lt;p&gt;就竟在，是我童示讓利分和異種百路關母信過明驗有個歷洋中前合著區亮風值新底車有正結，進快保的行戰從：弟除文辦條國備當來際年每小腳識世可的的外的廣下歌洲保輪市果底天影；全氣具些回童但倒影發狀在示，數上學大法很，如要我……月品大供這起服滿老？應學傳者國：山式排只不之然清同關；細車是！停屋常間又，資畫領生，相們制在？公別的人寫教資夠。資再我我！只臉夫藝量不路政吃息緊回力之；兒足灣電空時局我怎初安。意今一子區首者微陸現際安除發連由子由而走學體區園我車當會，經時取頭，嚴了新科同？很夫營動通打，出和導一樂，查旅他。坐是收外子發物北看蘭戰坐車身做可來。道就學務。&lt;/p&gt;
+&lt;p&gt;Modern blockchains store shared state and execute code, and the big question is how to do this efficiently - meaning how can you scale the execution of code and storage of shared state, without incurring big costs that are not affordable by users (and under the obvious constraints of public blockchains like decentralization, safety and liveness).&lt;/p&gt;
 
-&lt;p&gt;國新故。&lt;/p&gt;
+&lt;p&gt;Ethereum has become really expensive over the last few years (in rush time transferring ETH might cost as high as a few tens of dollars), and competing blockchains like Solana are offering fast and cheap transfers that cost a few cents. To solve that, Ethereum aimed for a modular roadmap that will ease costs and increase throughput with low costs as well.&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;工步他始能詩的，裝進分星海演意學值例道……於財型目古香亮自和這乎？化經溫詩。只賽嚴大一主價世哥受的沒有中年即病行金拉麼河。主小路了種就小為廣不？&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Modular blockchains remind me of the same trend that we’ve seen with cloud computing - the cloud allowed computers to decompose into their different components. Over the cloud, you can consume compute, memory, and storage separately - each priced separately, and can be scaled horizontally or vertically independently. This allows for catering to varying needs, costs, and technical requirements.&lt;/p&gt;
 
-&lt;p&gt;From &lt;a href=&quot;http://www.richyli.com/tool/loremipsum/&quot;&gt;亂數假文產生器 - Chinese Lorem Ipsum.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The same trend is happening with blockchains like Ethereum today. You can think of Ethereum as composed of different ‘layers’ - consensus/settlement, data availability, and execution. Consensus is the part that makes the network agree on a specific state, data availability provides the needed historical data to verify the network’s integrity, and execution is a runtime environment for executing codes (i.e., smart contracts).&lt;/p&gt;
 
-&lt;h3 id=&quot;3-简体中文测试&quot;&gt;3. 简体中文测试&lt;/h3&gt;
+&lt;p&gt;Until 2020, usually, all these components lived together, &lt;a href=&quot;https://ethereum-magicians.org/t/a-rollup-centric-ethereum-roadmap/4698&quot;&gt;but as of the end of 2020, Ethereum has adopted a ‘rollups-centric roadmap’&lt;/a&gt;, which is about turning itself into a settlement layer, while outsourcing execution and data availability to different layers.&lt;/p&gt;
 
-&lt;p&gt;效育声去本义然空，各值太法心想，场强实地。 题铁习点儿表管少间千，只何政亲织文意部，千影画派证男须。 手反取长风治增非等直难群，连取及天他己事头级，影数弦适把气快目人。 专议以省通引而千个，格则口段度样水热马，地教少务改磨。 包思外心半院应她算斯，市外会快记路又火学，劳如肃它准众丧边。&lt;/p&gt;
+&lt;p&gt;Since then, there has been a Cambrian explosion of innovation across the different layers, such as rollups, which have raised billions of dollars in aggregate from the best investors in the world.&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;团算部住县单总边素格军所，合音府教看和广光采率位转，位用品根确针百。 证其标元角工方海接交他，论象切万世认一响义，治然身本风弦带题。 向我次路持加北，她不反心。 说总元军例市决，现始即算证养，规走还壳。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;But not everyone agrees on this approach. Blockchains like Solana approached the scalability and technical difficulties of blockchains with another approach - more engineering! Solana has innovated on many of the different components of a blockchain, around networking (faster P2P data propagation), consensus (parallel agreeing on a shared state using sophisticated consensus algorithms), and execution (parallel execution of code). You can find many new engineering gadgets in Solana that try to solve the scalability and cost tradeoffs better. But all of these components are cramped together in the same client (the software that nodes run), hence a monolith.&lt;/p&gt;
 
-&lt;p&gt;因林可相儿应满军，热影省条律因资再，整肃赤心将届。 局广写两量备验还，南教事争工民的，备进研上布。 素身电活非直，速这区交示从，百层达。 资量那毛什京身，白这快。 半打容三手开常价或，手严量般象式效，名可重芽门适。 来设什一我么，光界美么或，住身式准。 造酸改表委验众办地百养，商物战众本列听度名院，制压录丽快与千机内。 住需当四议决得命南然照按民置，当住命形金决否矿单外。 气象理离开新集增际，三划方工义很年关，拉许准孝口。 构片出干计由备美打养，持育总指承入无己。&lt;/p&gt;
+&lt;p&gt;The objectors to the monolithic Solana approach claim that this comes with a huge cost for running nodes on the network and contradicts the decentralized nature of blockchains, making the network less stable and more centralized.&lt;/p&gt;
 
-&lt;p&gt;From &lt;a href=&quot;http://www.cancms.com/content/dummytext&quot;&gt;假文生成器， lorem ipsum Chinese&lt;/a&gt;&lt;/p&gt;</content><author><name>Idan Levin</name></author><category term="example2" /><summary type="html">Note: I took this test post from moving, which is another Jekyll theme which is better that this one so I should not have linked it because now you will decide to use it instead of mine.</summary></entry><entry><title type="html">Very Very Very Long Title And Very Very Very Short Content</title><link href="https://idan-levin.github.io/idanlevin.github.io//very-very-very-long-title-and-very-very-very-short-content.html" rel="alternate" type="text/html" title="Very Very Very Long Title And Very Very Very Short Content" /><published>2020-07-08T00:00:00+00:00</published><updated>2020-07-08T00:00:00+00:00</updated><id>https://idan-levin.github.io/idanlevin.github.io//very-very-very-long-title-and-very-very-very-short-content</id><content type="html" xml:base="https://idan-levin.github.io/idanlevin.github.io//very-very-very-long-title-and-very-very-very-short-content.html">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel lacinia neque. Praesent nulla quam, ullamcorper in sollicitudin ac, molestie sed justo. Cras aliquam, sapien id consectetur accumsan, augue magna faucibus ex, ut ultricies turpis tortor vel ante. In at rutrum tellus. Nullam vestibulum metus eu purus malesuada, volutpat mattis leo facilisis.&lt;/p&gt;</content><author><name>Idan Levin</name></author><category term="example" /><summary type="html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel lacinia neque. Praesent nulla quam, ullamcorper in sollicitudin ac, molestie sed justo. Cras aliquam, sapien id consectetur accumsan, augue magna faucibus ex, ut ultricies turpis tortor vel ante. In at rutrum tellus. Nullam vestibulum metus eu purus malesuada, volutpat mattis leo facilisis.</summary></entry></feed>
+&lt;p&gt;Personally, I’m in the modular camp. why?&lt;/p&gt;
+&lt;h3 id=&quot;modular--monolithic&quot;&gt;Modular &amp;gt; monolithic&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Open-source culture&lt;/strong&gt; - This allows for constant innovation across the stack and helps avoid protocol ossification. Anyone can add any teak to the EVM when it is an L2, or even use another VM (Eclipse is building a Solana based VM on Ethereum). Ethereum recently launched an RIP (Rollup Improvement Proposal) for the coordination of different imporvements between rollups and Ethereum.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Anti-fragility&lt;/strong&gt; - The failure of a single component doesn’t bring everything down with it. So if tomorrow morning one of the rollup bridges gets hacked (i.e. a failure of an execution enviorment), the industry gets to survive.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Better pricing of network resources&lt;/strong&gt; - Modular pricing for compute, data availability, and settlement.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Better competition&lt;/strong&gt; (“tech discovery”) - Competition among different components helps the market discover the best technologies.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Allows for more nuanced usage/edge cases&lt;/strong&gt; - Different users have varying specifications; modular design caters to all of them. There are many cases of specialized VMs such as Canto, that are experimenting with new types of incentives and value accrual from different VM pricing models.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Specialization&lt;/strong&gt; - Each component in the stack can focus on what it does best. For example parallel execution, which Ethereum doesn’t need to prioritize, can be optimized at the rollup level.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Decentralization/scalability spectrum choice&lt;/strong&gt; - Allows users to choose their preferred position on this spectrum. Ethereum the monolith is expensive and decentralized, volition is more centralized with data but cheaper, validium is a middleground.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Monolithic architecture has some very obvious advantages - everything is composable and much easier to coordinate changes. However, I believe that open source collaboration will eventually compound to an extent that is unbeatable by other chains. The best historical example of this is Linux, with a great description of the open source model in the book ‘The Cathedral and the Bazaar’. Or, as they say - if you want to go fast, go alone; if you want to go far, go together.&lt;/p&gt;</content><author><name>Idan Levin</name></author><category term="blog_posts" /><summary type="html">The 2023 price rally in Solana has ignited a fiery ‘geeky’ discussion on X between developer communities regarding different blockchain architectures. It is quite common to watch tribes of developers and investors in crypto land fighting over what is the best/right tech, and ‘modular vs. monolithic’ is the current hot discussion.</summary></entry><entry><title type="html">educating markets</title><link href="https://idan-levin.github.io/idanlevin.github.io//educating-markets.html" rel="alternate" type="text/html" title="educating markets" /><published>2023-12-18T00:00:00+00:00</published><updated>2023-12-18T00:00:00+00:00</updated><id>https://idan-levin.github.io/idanlevin.github.io//%20educating%20markets</id><content type="html" xml:base="https://idan-levin.github.io/idanlevin.github.io//educating-markets.html">&lt;p&gt;In 1958, Bank of America conducted an experimental financial campaign in Fresno, California, where they mailed out 60,000 credit cards to residents. These cards were a new product offering a $500 line of credit (~$5k in today’s terms). This move was a pioneering effort in the credit card industry and marked a significant shift in consumer finance. This event is known as the “Fresno Drop”.&lt;/p&gt;
+
+&lt;p&gt;Before this event, credit was primarily offered by local businesses, like corner bars or stores, which allowed patrons to maintain open tabs recorded in ledger books. For larger purchases, consumers had to obtain individual loans. The Fresno Drop was a major step in expanding the availability and use of credit cards. Within 10 months, over a million BankAmericards had been distributed across California.&lt;/p&gt;
+
+&lt;p&gt;After dropping the new credit cards on many new customers, mostly not familiar with the concept of credit, BoA experienced massive fraud for a few years. But it later became a very successful business (and today one of the best businesses on earth as Visa). But note that in 1958, Bank of America was already one of the largest and most influential banks in the United States. The ability to educate the market in using a credit card, and standing the losses and massive fraud was the consequence of its stability and of being a well-established business. Could a credit-card startup educate the market in 1958 and take control of the market like they did? Probably not. Startups usually have 2-3 years between financing rounds, and they need to show results quickly. Withstanding years of fraud could be the valley of death for startups. Which means that not every market adoption product or behavior should come from startups, sometimes incumbents are actually the ones doing the heavy lifting of opening the market.&lt;/p&gt;
+
+&lt;p&gt;In the crypto industry, I think for the first time we have trusted ‘institutions’ that can do this heavy lifting for us. One example is Coinbase, which lately issued a new product of attesting to their customers onchain (sort of a verification service). In less than 2 months, they have gotten to ~50k verified account attestations. Now for the first time, we have bridged massive amounts of people’s identity from offchain to onchain. This is not something very monetizable at the moment, so hard to see startups pulling this off. But as a public good / education mechanism, it is extremely effective.&lt;/p&gt;
+
+&lt;p&gt;I believe that many of the things we want to see happen in crypto (e.g., onchain payments, voting) will actually be bootstrapped by institutions who have enough firepower to educate the market and withstand it financially. Sometimes the startup opportunity is actually piggybacking these efforts, and riding the incumbent education.&lt;/p&gt;</content><author><name>Idan Levin</name></author><category term="blog_posts" /><summary type="html">In 1958, Bank of America conducted an experimental financial campaign in Fresno, California, where they mailed out 60,000 credit cards to residents. These cards were a new product offering a $500 line of credit (~$5k in today’s terms). This move was a pioneering effort in the credit card industry and marked a significant shift in consumer finance. This event is known as the “Fresno Drop”.</summary></entry><entry><title type="html">the crypto casino and tech ark dichotomy</title><link href="https://idan-levin.github.io/idanlevin.github.io//the-crypto-casino-and-tech-ark-dichotomy.html" rel="alternate" type="text/html" title="the crypto casino and tech ark dichotomy" /><published>2023-11-23T00:00:00+00:00</published><updated>2023-11-23T00:00:00+00:00</updated><id>https://idan-levin.github.io/idanlevin.github.io//%20The%20Crypto%20Casino%20and%20Tech%20Ark%20Dichotomy</id><content type="html" xml:base="https://idan-levin.github.io/idanlevin.github.io//the-crypto-casino-and-tech-ark-dichotomy.html">&lt;p&gt;Crypto’s landscape is a tale of two distinct realms: the casino and the tech ark. The casino dwellers focus on perps, price cycles, and prevailing narratives. They are less concerned with the technical specifics, such as whether a rollup is in its initial stages or uses working validity proofs. In fact, some might not differentiate between a rollup and a smart contract with a 3/5 multi-sig.&lt;/p&gt;
+
+&lt;p&gt;In contrast, the people of the tech ark prioritize decentralization, user adoption and technological innovation. These are usually optimistic builders are committed to developing tools that facilitate global crypto adoption.&lt;/p&gt;
+
+&lt;p&gt;Most people/protocols/companies in the crypto world can be categorized as a blend of these two domains, with varying percentages (e.g., 80% casino and 20% tech ark, or vice versa).&lt;/p&gt;
+
+&lt;p&gt;This framework helps us dissect the recent controversy surrounding Blast, a future-to-be rollup in development. Announced with the objective of revolutionizing NFT trading markets, Blast swiftly attracted an &lt;a href=&quot;https://twitter.com/Blast_L2/status/1727475453869301854/&quot;&gt;astounding $230 million in its contract&lt;/a&gt;  within 48 hours, with the promise of Blast points (i.e. classical yield farming). However, it turns out that this future rollup-to-be is currently just a 3/5 multi-signature smart contract. This annoyed tech enthusiasts, including the &lt;a href=&quot;https://twitter.com/sgoldfed/status/1727345174836060622/&quot;&gt; CEO of Arbitrum &lt;/a&gt; , who are diligently working to define and standardize rollups.&lt;/p&gt;
+
+&lt;p&gt;Bartek Kiepuszewski, founder of L2BEAT, which tracks rollup progress, also expressed frustration over Blast’s &lt;a href=&quot;https://twitter.com/bkiepuszewski/status/1726928121180631182&quot;&gt; rollup claims. &lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Yet, the rapid capture of significant liquidity cannot be overlooked. So, who is truly right in this scenario? It depends on your perspective. In the framework of the casino and tech ark, Blast currently leans heavily towards the casino ethos (&amp;gt;90%). Its deviation from rollup standards and its ambition to become a perpetual marketplace for NFTs clearly align it with casino interests. This has incensed the tech rollups builders, as they view Blast’s approach as a deviation from the foundational principles of technological integrity and innovation. However, the allure of quick success and liquidity in the casino realm is undeniable.&lt;/p&gt;
+
+&lt;p&gt;Ultimately, the Blast saga underscores once again the difference between the casino and the tech ark.&lt;/p&gt;
+
+&lt;p&gt;As crypto builders, users and investors we choose where do we get to live. So, what will it be, the casino or the tech ark?&lt;/p&gt;</content><author><name>Idan Levin</name></author><category term="blog_posts" /><summary type="html">Crypto’s landscape is a tale of two distinct realms: the casino and the tech ark. The casino dwellers focus on perps, price cycles, and prevailing narratives. They are less concerned with the technical specifics, such as whether a rollup is in its initial stages or uses working validity proofs. In fact, some might not differentiate between a rollup and a smart contract with a 3/5 multi-sig.</summary></entry></feed>
