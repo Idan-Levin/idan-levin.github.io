@@ -8,6 +8,7 @@ Why don't I believe in monolithic blockchains?
 
 Explaining from first principles:
 
+
 1. Blockchains are computers.
 
 2. Computer history has shown us that when you build more bandwidth, storage, and compute capacity, developers build more demanding apps and use these excess resources.
