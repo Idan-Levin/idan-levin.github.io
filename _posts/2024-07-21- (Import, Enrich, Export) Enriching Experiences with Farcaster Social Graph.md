@@ -11,7 +11,7 @@ One of the key advantages of Farcaster is its open API, which stands in contrast
 
 But the recent introduction of frames also allows for another interesting model, which is open import. You can take an existing web app, transition it into a Frame app, and publish it as a cast (today it is technically limited to the OpenGraph standard, but soon expected to be upgraded to iFrames which are more versatile).
 
-Once you convert web apps into frames, something magical happens – you can enrich them with social data—such as likes, shares, and comments. A piece of the app can be added contextual social data when embedding them in Farcaster. Because the ‘export’ module is always on (no one can shut down the API), this makes for a powerful primitive that allows us to import, enrich, and export back the web app. This process takes a piece of static app with no social context and exapnds it with social knowledge and interactions. 
+Once you convert web apps into frames, something magical happens – you can enrich them with social data—such as likes, shares, and comments. A piece of the app can be added contextual social data when embedding them in Farcaster. Because the ‘export’ module is always on (no one can shut down the API), this makes for a powerful primitive that allows us to import, enrich, and export back the web app. This process takes a piece of static app with no social context and expands it with social knowledge and interactions. 
 
 ## The Potential of Open Import/Export
 
