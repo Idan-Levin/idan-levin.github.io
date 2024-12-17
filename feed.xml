@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="https://idan-levin.github.io/idanlevin.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://idan-levin.github.io/idanlevin.github.io//" rel="alternate" type="text/html" /><updated>2024-09-26T14:31:02+00:00</updated><id>https://idan-levin.github.io/idanlevin.github.io//feed.xml</id><title type="html">Idan Levin</title><subtitle>&lt;strong&gt;&quot;Dance like no one is watching, write like no one is reading.&quot;&lt;/strong&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="https://idan-levin.github.io/idanlevin.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://idan-levin.github.io/idanlevin.github.io//" rel="alternate" type="text/html" /><updated>2024-12-17T12:59:09+00:00</updated><id>https://idan-levin.github.io/idanlevin.github.io//feed.xml</id><title type="html">Idan Levin</title><subtitle>&lt;strong&gt;&quot;Dance like no one is watching, write like no one is reading.&quot;&lt;/strong&gt;
 </subtitle><author><name>Idan Levin</name></author><entry><title type="html">(import, enrich, export) enriching experiences with farcaster social graph</title><link href="https://idan-levin.github.io/idanlevin.github.io//import-enrich-export-enriching-experiences-with-farcaster-social-graph.html" rel="alternate" type="text/html" title="(import, enrich, export) enriching experiences with farcaster social graph" /><published>2024-07-21T00:00:00+00:00</published><updated>2024-07-21T00:00:00+00:00</updated><id>https://idan-levin.github.io/idanlevin.github.io//%20(Import,%20Enrich,%20Export)%20Enriching%20Experiences%20with%20Farcaster%20Social%20Graph</id><content type="html" xml:base="https://idan-levin.github.io/idanlevin.github.io//import-enrich-export-enriching-experiences-with-farcaster-social-graph.html">&lt;p&gt;Farcaster offers a new way to enrich crypto financial experiences, whether it’s buying physical items, digital items like NFTs, sports betting, or engaging in prediction markets. This allows for the integration of standalone web applications into a more socially interactive environment.&lt;/p&gt;
 
 &lt;h2 id=&quot;import-enrich-export&quot;&gt;Import, Enrich, Export&lt;/h2&gt;
@@ -226,7 +226,7 @@ However, it seems like modern society faces a ‘trust barrier.’ With more inf
 
 &lt;p&gt;&lt;img src=&quot;/entropy3.png&quot; alt=&quot;1&quot; class=&quot;ioda&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Source&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;Source&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot; role=&quot;doc-noteref&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Beyond a certain point, trust doesn’t scale with current technology&lt;/strong&gt;. The internet has brought us information efficiency, but it cannot scale trust by itself. Human collaboration is hindered by significant entropy in the trust chain, evident in societal distrust, from vaccine scepticism to conspiracy theories.&lt;/p&gt;
 
@@ -247,7 +247,7 @@ The idea is that humans don’t have to build these long trust chains, that gets
 
 &lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
   &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
       &lt;p&gt;Source: https://www.pewresearch.org/politics/2023/09/19/public-trust-in-government-1958-2023/ &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
